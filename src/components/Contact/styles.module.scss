@@ -31,7 +31,7 @@
     font-family: $font-family-pattern;
     font-weight: $font-weight-primary-title;
     font-size: $font-primary-title-size;
-    color: $second-color-light;
+    color: $primary-color-light;
     margin-top: 5px;
 }
 
@@ -102,8 +102,6 @@
 }
 
 //--- DARK ---
-
-
 .container-dark {
     display: flex;
     flex-direction: column;
@@ -118,8 +116,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $primary-background-color-dark;
-    
+    background-color: $primary-background-color-dark;  
 }
 
 .div-contact-title-dark {
@@ -127,7 +124,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    padding-top: 115px;
+    padding-bottom: 115px;
 }
 
 .title {
@@ -178,4 +176,85 @@
     border-color: $primary-color-dark;
     border-style: solid;
     margin-bottom: 25px;
+}
+
+@media (max-width: 900px) {
+
+    .container-div-dark {
+        width: 900px;
+    }
+
+    .subtitle-dark {
+        width: 400px;
+    }
+
+    .input-dark {
+        width: 450px;
+        height: 30px;
+    }
+    .input-dark:nth-child(6) {
+        margin-bottom: 45px;
+    }
+    
+    .input-dark:nth-child(8) {
+        width: 450px;
+    }
+
+    .button-submit {
+        width: 450px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container-div-dark {
+        width: 600px;
+    }
+
+    .subtitle-dark {
+        width: 300px;
+    }
+
+    .input-dark {
+        width: 350px;
+        height: 30px;
+    }
+    .input-dark:nth-child(6) {
+        margin-bottom: 45px;
+    }
+    
+    .input-dark:nth-child(8) {
+        width: 350px;
+    }
+
+    .button-submit {
+        width: 350px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .container-div-dark {
+        width: 300px;
+    }
+
+    .subtitle-dark {
+        width: 250px;
+    }
+
+    .input-dark {
+        width: 220px;
+        height: 20px;
+    }
+    .input-dark:nth-child(6) {
+        margin-bottom: 15px;
+    }
+    
+    .input-dark:nth-child(8) {
+        width: 220px;
+    }
+
+    .button-submit {
+        width: 220px;
+    }
 }
