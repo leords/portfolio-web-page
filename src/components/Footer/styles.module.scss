@@ -1,0 +1,130 @@
+@import '../../sass/font.scss';
+@import '../../sass/theme.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.container-div-light {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color-light;
+}
+
+.div-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+.div-person {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 100%;
+    padding-left: 80px;
+
+    h2 {
+        font-family: $font-family-pattern;
+        font-size: $font-four-title-size;
+        font-weight: $font-weight-thred-title;
+        color: $primary-background-color-light;
+        margin-bottom: 1px;
+    }
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    
+    p {
+        font-family: $font-family-pattern;
+        font-size: $font-text-size;
+        font-weight: $font-weight-text;
+        color: $primary-background-color-light;
+        padding-right: 4px;
+        margin-bottom: 0px;
+    }
+}
+
+.cell {
+    display: flex;
+    flex-direction: row;
+    
+    p {
+        font-family: $font-family-pattern;
+        font-size: $font-text-size;
+        font-weight: $font-weight-text;
+        color: $primary-background-color-light;
+        padding-right: 4px;
+        margin-top: 4px;
+        margin-bottom: 0px;
+    }
+}
+
+.div-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    padding-right: 80px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        font-family: $font-family-pattern;
+        font-size: $font-text-size;
+        color: $primary-background-color-light;
+    }
+}
+
+.div-logo {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid 1px $primary-background-color-light
+}
+
+.div-dev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-family: $font-family-pattern;
+        font-size: $font-text-size;
+        color: $primary-background-color-light;
+    }
+}
+
+
+//--- DARK ---
+
+
+.container-div-dark {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $second-background-color-dark;
+}

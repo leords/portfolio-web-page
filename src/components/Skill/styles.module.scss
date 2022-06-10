@@ -1,0 +1,255 @@
+@import '../../sass/font.scss';
+@import '../../sass/theme.scss';
+
+
+.container-light {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    height: 980px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $primary-background-color-light;
+}
+
+.container-div-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+}
+
+.div-skill-title-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-light {
+    font-family: $font-family-pattern;
+    font-size: $font-second-title-size;
+    font-weight: $font-weight-second-title;
+    color: $primary-color-light;
+    margin-top: 5px;
+}
+
+.subtitle-light {
+    font-size: $font-text-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-light;
+    width: 500px;
+    text-align: center; 
+    margin-top: 5px;
+}
+
+.div-skill-person {
+    display: flex;
+    flex-direction: row;
+    margin-top: 110px;
+}
+
+.div-skill-person-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.div-image {
+        position: absolute;
+        img {
+            width: 260px;
+        }
+}
+
+.slipse-light {
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    margin-top: -50px;
+    background-color: $primary-color-light
+}
+
+.div-skill-person-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.div-text-light {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tech-title {
+    font-family: $font-family-pattern;
+    font-size: 18px;
+    font-weight: $font-weight-second-title;
+    color: $primary-color-light;
+    margin-bottom: 5px;
+}
+
+.tech-subtitle-light {
+    font-size: $font-text-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-light;
+    margin-top: 0px;
+}
+
+.first-div-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.second-div-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .icone:nth-child(5) {
+        margin-left: -10px;
+    }
+}
+
+.icone {
+    width: auto;
+    height: 55px;
+    margin: 1px;
+}
+
+//--- DARK ---
+
+.container-dark {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    height: 980px;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-background-color-dark;
+}
+
+.container-div-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+}
+
+.div-skill-title-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-dark {
+    font-family: $font-family-pattern;
+    font-size: $font-second-title-size;
+    font-weight: $font-weight-second-title;
+    color: $primary-color-dark;
+    margin-top: 5px;
+}
+
+.subtitle-dark {
+    font-size: $font-text-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-dark;
+    width: 500px;
+    text-align: center; 
+    margin-top: 5px;
+}
+
+.div-skill-person {
+    display: flex;
+    flex-direction: row;
+    margin-top: 110px;
+}
+
+.div-skill-person-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.div-image {
+        position: absolute;
+        img {
+            width: 260px;
+        }
+}
+
+.slipse-dark {
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    margin-top: -50px;
+    background-color: $primary-color-dark
+}
+
+.div-skill-person-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.div-text-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tech-title {
+    font-family: $font-family-pattern;
+    font-size: 18px;
+    font-weight: $font-weight-second-title;
+    color: $primary-color-dark;
+    margin-bottom: 5px;
+}
+
+.tech-subtitle-dark {
+    font-size: $font-text-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-dark;
+    margin-top: 0px;
+}
+
+.first-div-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.second-div-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .icone:nth-child(5) {
+        margin-left: -10px;
+    }
+}
+
+.icone {
+    width: auto;
+    height: 55px;
+    margin: 1px;
+}
+

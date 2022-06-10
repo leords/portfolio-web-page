@@ -1,0 +1,181 @@
+@import '../../sass/font.scss';
+@import '../../sass/theme.scss';
+
+.container-light {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.container-div-light {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-background-color-light;
+}
+
+.div-contact-title-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 115px;
+    padding-bottom: 115px;
+}
+
+.title {
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-primary-title;
+    font-size: $font-primary-title-size;
+    color: $second-color-light;
+    margin-top: 5px;
+}
+
+.subtitle-light {
+    font-size: $font-text-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-light;
+    text-align: center; 
+    margin-top: 5px;
+    width: 500px;
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 115px;
+
+    img {
+        width: 150px;
+    }
+}
+
+.label-light {
+    font-size: 14px;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-light;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.input-light {
+    width:540px;
+    height: 30px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: $primary-color-light;
+    border-style: solid;
+}
+
+.input-light:nth-child(6) {
+    margin-bottom: 45px;
+}
+
+.input-light:nth-child(8) {
+    width:540px;
+    height: 120px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: $primary-color-light;
+    border-style: solid;
+    margin-bottom: 25px;
+}
+
+.button-submit {
+    width: 540px;
+    height: 30px;
+    border-radius: 4px;
+    border-style: none;
+    color:$primary-background-color-light;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-thred-title;
+    background-color: $primary-color-light;
+    margin-bottom: 20px;
+}
+
+//--- DARK ---
+
+
+.container-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.container-div-dark {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-background-color-dark;
+    
+}
+
+.div-contact-title-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.title {
+    font-family: $font-family-pattern;
+    font-size: $font-second-title-size;
+    font-weight: $font-weight-second-title;
+    color: $primary-color-light;
+    margin-top: 5px;
+}
+
+.subtitle-dark {
+    font-size: $font-text-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-dark;
+    text-align: center; 
+    margin-top: 5px;
+    width: 500px;
+}
+
+.label-dark {
+    font-size: 14px;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-dark;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.input-dark {
+    width:540px;
+    height: 30px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: $primary-color-dark;
+    border-style: solid;
+}
+
+.input-dark:nth-child(6) {
+    margin-bottom: 45px;
+}
+
+.input-dark:nth-child(8) {
+    width:540px;
+    height: 120px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: $primary-color-dark;
+    border-style: solid;
+    margin-bottom: 25px;
+}

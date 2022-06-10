@@ -1,0 +1,158 @@
+@import '../../sass/font.scss';
+@import '../../sass/theme.scss';
+
+
+.container-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 400px;
+    height: 580px;
+}
+
+.div-image-light {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 380px;
+    height: 280px;
+
+    img {
+        width: 380px;
+        height: 280px;
+        border-radius: 5px;
+        box-shadow: 2px 4px 50px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.div-text-light {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title-description-light {
+    font-family: $font-family-pattern;
+    font-size: 14px;
+    font-weight: $font-weight-thred-title;
+    color: $second-color-light;
+    margin-bottom: 3px;
+}
+
+.description-light {
+    height: 65px;
+    font-family: $font-family-pattern;
+    font-size: 13px;
+    font-weight: $font-weight-text;
+    color: $three-color-light;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title-tech-light {
+    font-family: $font-family-pattern;
+    font-size: 14px;
+    font-weight: $font-weight-thred-title;
+    color: $second-color-light;
+    margin-bottom: 3px;
+}
+
+.techs-light {
+    height: 65px;
+    font-family: $font-family-pattern;
+    font-size: 13px;
+    font-weight: $font-weight-text;
+    color: $three-color-light;
+    margin-top: 0px;  
+}
+
+.div-link {
+    display: flex;
+    width: 90%;
+    margin-bottom: 95px;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.link {
+    font-family: $font-family-pattern;
+    font-size: 12px;
+    font-weight: $font-weight-text;
+    color: rgb(60, 60, 209);
+    text-decoration: none;
+}
+
+//--- DARK ----
+
+
+.container-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 400px;
+    height: 550px;
+}
+
+.div-image-dark {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 380px;
+    height: 280px;
+
+    img {
+        width: 380px;
+        height: 280px;
+        border-radius: 5px;
+        box-shadow: 2px 4px 50px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.div-text-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title-description-dark {
+    font-family: $font-family-pattern;
+    font-size: 14px;
+    font-weight: $font-weight-thred-title;
+    color: $second-color-dark;
+    margin-bottom: 3px;
+}
+
+.description-dark {
+    height: 65px;
+    font-family: $font-family-pattern;
+    font-size: 13px;
+    font-weight: $font-weight-text;
+    color: $three-color-dark;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title-tech-dark {
+    font-family: $font-family-pattern;
+    font-size: 14px;
+    font-weight: $font-weight-thred-title;
+    color: $second-color-dark;
+    margin-bottom: 3px;
+}
+
+.techs-dark {
+    height: 65px;
+    font-family: $font-family-pattern;
+    font-size: 13px;
+    font-weight: $font-weight-text;
+    color: $three-color-dark;
+    margin-top: 0px;  
+}

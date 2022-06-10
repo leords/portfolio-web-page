@@ -1,0 +1,130 @@
+@import '../../sass/font.scss';
+@import '../../sass/theme.scss';
+
+.container-light {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: $second-background-color-light;
+}
+
+.container-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+
+    margin-top: 115px;
+    margin-bottom: 70px;
+}
+
+.div-portfolio-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 115px;
+}
+
+.title {
+    font-family: $font-family-pattern;
+    font-size: $font-second-title-size;
+    font-weight: $font-weight-second-title;
+    color: $primary-color-light;
+    margin-top: 5px;
+}
+
+.subtitle-light {
+    font-size: $font-text-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-light;
+    width: 500px;
+    text-align: center; 
+    margin-top: 5px;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    row-gap: 20px;
+    column-gap: 60px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.card-light {
+    width: 400px;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.div-link-portfolio-complete {
+    width: 100%;
+    padding-right: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 110px;
+}
+
+.link-portfolio-complete-light {
+    font-size: 14px;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-light;
+    text-align: center; 
+    text-decoration: none;
+}
+
+//--- DARK ---
+
+.container-dark {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: $second-background-color-dark;
+}
+
+.subtitle-dark {
+    font-size: $font-text-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-dark;
+    width: 500px;
+    text-align: center; 
+    margin-top: 5px;
+}
+
+.card-dark {
+    width: 400px;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: $three-background-color-dark;
+    box-shadow: 2px 4px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.link-portfolio-complete-dark {
+    font-size: 14px;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-dark;
+    text-align: center; 
+    text-decoration: none;
+}

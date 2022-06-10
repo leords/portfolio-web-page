@@ -1,0 +1,50 @@
+@import '../../sass/theme.scss';
+
+.reactSwitchCheckbox {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  .reactSwitchLabel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color .3s;
+    border-width: 1px;
+    border-color:rgb(74, 167, 143);
+    border-style: solid;
+  }
+  
+  .reactSwitchLabel .reactSwitchButton {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    border-radius: 45px;
+    transition: 0.5s;
+    background: rgb(74, 167, 143);
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  }
+
+  .reactSwitchCheckbox:checked + .reactSwitchLabel {
+    background: rgb(132, 141, 141);
+  }
+  
+  .reactSwitchCheckbox:checked + .reactSwitchLabel .reactSwitchButton {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+  }
+  
+  .reactSwitchLabel:active .reactSwitchButton {
+    width: 60px;
+  }

@@ -1,0 +1,190 @@
+@import '../../sass/font.scss';
+@import '../../sass/theme.scss';
+
+.container-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 870px;
+    background-color: $second-background-color-light;
+}
+
+//-- about me!
+.div-about-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-light {
+    font-size: $font-second-title-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-primary-title;
+    color: $primary-color-light;
+    margin-top: 5px;
+}
+.subtitle-light {
+    font-size: $font-text-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-light;
+    width: 500px;
+    text-align: center; 
+
+    margin-top: 5px;
+}
+
+//-- icones!
+.div-icone-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.icones-row-1-light {
+    display: flex;
+    width: 600px;
+    height: 140px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icones-row-2-light {
+    display: flex;
+    width: 600px;
+    height: 140px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icone-1-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-2-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-3-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-4-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-light {
+    font-family: $font-family-pattern;
+    font-size: $font-text-size;
+    font-weight: $font-weight-text;
+    color: $second-color-light;
+    padding: 4px;
+}
+
+//--- DARK --- \/
+
+.container-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 870px;
+    background-color: $second-background-color-dark;
+}
+
+//-- about me!
+.div-about-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-dark {
+    font-size: $font-second-title-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-primary-title;
+    color: $primary-color-dark;
+    margin-top: 5px;
+}
+.subtitle-dark {
+    font-size: $font-text-size;
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-text;
+    color: $second-color-dark;
+    width: 500px;
+    text-align: center; 
+
+    margin-top: 5px;
+}
+
+//-- icones!
+.div-icone-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.icones-row-1-dark {
+    display: flex;
+    width: 600px;
+    height: 140px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icones-row-2-dark {
+    display: flex;
+    width: 600px;
+    height: 140px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icone-1-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-2-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-3-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-4-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-dark {
+    font-family: $font-family-pattern;
+    font-size: $font-text-size;
+    font-weight: $font-weight-text;
+    color: $second-color-dark;
+    padding: 4px;
+}
