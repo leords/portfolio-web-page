@@ -43,7 +43,6 @@ export function Skill() {
                     <div className={styles['div-skill-person-logo']}>
                         <div className={styles['div-text-' + theme]}>
                             <h2 className={styles['tech-title']}>Developing</h2>
-                            <p className={styles['tech-subtitle-' + theme]}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                         </div>
                         <div className={styles['first-div-logo']}>
                             <img className={styles.icone} src={css} alt="CSS" />
@@ -54,7 +53,6 @@ export function Skill() {
                         </div>
                         <div>
                             <h2 className={styles['tech-title']}>Learning</h2>
-                            <p className={styles['tech-subtitle-' + theme]}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                         </div>
                         <div className={styles['second-div-logo']}>
                             <img className={styles.icone} src={nodeJs} alt="NODE JS" />

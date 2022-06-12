@@ -11,10 +11,10 @@ export function Menu() {
 
 
     return(
-        <div className={styles['container' + theme]}>
-            <div className={styles['menu' + theme]}>
-                <div className={styles.list}>
-                        <ul className={styles['nav' + theme]}>
+        <div className={styles['container-' + theme]}>
+            <div className={styles['menu-' + theme]}>
+                <div className={styles['list']}>
+                        <ul className={styles['nav-' + theme]}>
                             <li>
                                 <a href="#home">Home</a> 
                             </li>
@@ -32,7 +32,7 @@ export function Menu() {
                             </li>
                         </ul>
                 </div>
-                <div className={styles['buttonToggle' + theme]}>
+                <div className={styles['button-toggle-' + theme]}>
                     {theme == 'light' && (
                         <>
                         <Moon 

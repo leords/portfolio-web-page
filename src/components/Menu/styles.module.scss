@@ -1,260 +1,252 @@
 @import '../../sass/font.scss';
 @import '../../sass/theme.scss';
 
-
-.containerlight {
+.container-light {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.menulight {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 1200px;
-        height: auto;
-        background-color: $primary-background-color-light;
+.menu-light {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: auto;
+    background-color: $primary-background-color-light;
 }
 
 .list {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    width: 90%;
-        
-    .navlight {
+    justify-content: center;
+    width: 50%;
+}
+
+.nav-light {
+    display: flex;
+    background-color: $primary-background-color-light;
+    
+    li {
         display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        outline-style: none;
-        background-color: $primary-background-color-light;
-        }
-    
-        li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 30px;
-            width: 100px;
-        }
-    
-        a {
-            text-decoration: none;
-            font-size: $font-text-size;
-            font-weight: $font-weight-thred-title;
-            font-family: $font-family-pattern;
-            color: $primary-color-light;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 100px;
+    }    
+    a {
+        text-decoration: none;
+        font-size: $font-text-size;
+        font-weight: $font-weight-thred-title;
+        font-family: $font-family-pattern;
+        color: $primary-color-light;
+    } 
+}
 
-        }    
-    }
-
-.buttonTogglelight {
-    width: 10%;
+.button-toggle-light {
+    width: 50%;
     height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0px;
     background-color: $primary-background-color-light;
-
     margin-top: 25px;
 
     p {
         font-family: $font-family-pattern;
         font-size: 13px;
         font-weight: $font-weight-text;
-        
-
-
         margin-bottom: 8px;
         margin-top: 3px;
     }
 }
 
-@media(max-width: 980px) {
+//---DARK---
 
-    
-    .list {
-        justify-content: center;
-        width: 80%;
-
-        li {
-            height: 30px;
-            width: 60px;
-        }
-    
-        a {
-            text-decoration: none;
-            font-size: 12px;
-        }
-    }
-
-    .buttonTogglelight {
-        width: 20%;
-    }    
-}
-
-@media(max-width: 440px) {
-
-
-    .list {
-        justify-content: flex-start;
-        width: 70%;
-        margin-top: 80px;
-
-        .navlight {
-            display: flex;
-            flex-direction: column;
-            background-color: $primary-background-color-light;
-        }
-    
-        li {
-            justify-content: flex-start;
-            align-items: center;
-            height: 20px;
-            width: 70px;
-        }
-    
-        a {
-            text-decoration: none;
-            font-size: 12px;
-        }  
-    }
-
-    .buttonTogglelight {
-        width: 30%;
-    }  
-}
-
-// MODO DARK ---------------------------------------------------------
-
-.containerdark {
+.container-dark {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
 }
 
-.menudark {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 1200px;
-        height: 100px;
-        background-color: $primary-background-color-dark;
+.menu-dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: auto;
+    background-color: $primary-background-color-dark;
 }
 
 .list {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    width: 90%;
-        
-    .navdark {
+    justify-content: center;
+    width: 50%;
+}
+.nav-dark {
+    display: flex;
+    background-color: $primary-background-color-dark;
+    
+    li {
         display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        outline-style: none;
-        background-color: $primary-background-color-dark;
-        }
-    
-        li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 30px;
-            width: 100px;
-            
-        }
-    
-        a {
-            text-decoration: none;
-            font-size: $font-text-size;
-            font-weight: $font-weight-thred-title;
-            font-family: $font-family-pattern;
-            color: $primary-color-dark;
-
-        }    
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 100px;
     }
+    a {
+        text-decoration: none;
+        font-size: $font-text-size;
+        font-weight: $font-weight-thred-title;
+        font-family: $font-family-pattern;
+        color: $primary-color-dark;
+    }    
+}
 
-.buttonToggledark {
-    width: 10%;
-    height: 80px;
+.button-toggle-dark {
+    width: 50%;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0px;
     background-color: $primary-background-color-dark;
-
-    margin-top: 10px;
+    margin-top: 25px;
 
     p {
         font-family: $font-family-pattern;
         font-size: 13px;
         font-weight: $font-weight-text;
         color: $primary-background-color-light;
-        
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         margin-top: 3px;
     }
 }
 
-@media(max-width: 980px) {
 
+@media(max-width: 900px) {
+    .menu-light {
+        width: 900px;
+    }
     .list {
-        justify-content: center;
-        width: 80%;
-
+        justify-content: end;
+        width: 55%;
         li {
-            height: 30px;
-            width: 60px;
+            width: 80px;
         }
-    
         a {
-            text-decoration: none;
-            font-size: 12px;
+            font-size: 14px;
         }
     }
-
-    .buttonToggledark {
-        width: 20%;
-    }    
+    .button-toggle-light {
+        width: 25%;
+    }   
+//--- DARK ---
+    .menu-dark {
+        width: 900px;
+    }
+    .list {
+        justify-content: end;
+        width: 55%;
+        li {
+            width: 80px;
+        }
+        a {
+            font-size: 14px;
+        }
+    }
+    .button-toggle-dark {
+        width: 25%;
+    }     
 }
 
-@media(max-width: 440px) {
-
-
+@media(max-width: 600px) {
+    .menu-light {
+        width: 600px;
+    }
     .list {
-        justify-content: flex-start;
-        width: 70%;
-        margin-top: 80px;
-
-        .navdark {
-            display: flex;
-            flex-direction: column;
-            background-color: $primary-background-color-dark;
-        }
-    
+        justify-content: end;
+        width: 60%;
         li {
-            justify-content: flex-start;
-            align-items: center;
-            height: 20px;
             width: 70px;
         }
-    
         a {
-            text-decoration: none;
             font-size: 12px;
         }  
     }
+    .button-toggle-light {
+        width: 20%;
+    }
+//---DARK ---
+    .menu-dark {
+        width: 600px;
+    }
+    .list {
+        justify-content: end;
+        width: 60%;
+        li {
+            width: 70px;
+        }
+        a {
+            font-size: 12px;
+        }  
+    }
+    .button-toggle-dark {
+        width: 20%;
+    }
+}
 
-    .buttonToggledark {
-        width: 30%;
+@media(max-width: 425px) {
+    .menu-light {
+        width: 425px;
+        border-bottom: solid 1px $primary-color-light;
+    }
+    .list {
+        justify-content: start;
+        padding-left: 10px;
+        width: 50%;
+        li {
+            justify-content: start;
+            width: 70px;
+            height: 25px ;
+        }
+        a {
+            font-size: 13px;
+        } 
+        .nav-light {
+            flex-direction: column;
+        } 
+    }
+    .button-toggle-light {
+        width: 20%;
     }  
+//---DARK ---
+    .menu-dark {
+        width: 425px;
+        border-bottom: solid 1px $primary-color-dark;
+    }
+    .list {
+        justify-content: start;
+        padding-left: 10px;
+        width: 50%;
+        li {
+            justify-content: start;
+            width: 70px;
+            height: 25px ;
+        }
+        a {
+            font-size: 13px;
+        } 
+        .nav-dark {
+            flex-direction: column;
+        } 
+    }
+    .button-toggle-dark {
+        width: 20%;
+    } 
 }
 

@@ -11,13 +11,14 @@
     background-color: $second-background-color-light;
 }
 
-//-- about me!
 .div-about-light {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 1200px;
 }
+
 .title-light {
     font-size: $font-second-title-size;
     font-family: $font-family-pattern;
@@ -32,11 +33,9 @@
     color: $second-color-light;
     width: 500px;
     text-align: center; 
-
     margin-top: 5px;
 }
 
-//-- icones!
 .div-icone-light {
     display: flex;
     flex-direction: column;
@@ -52,6 +51,7 @@
     height: 140px;
     align-items: center;
     justify-content: space-around;
+    margin-left: 20px;
 }
 
 .icones-row-2-light {
@@ -93,9 +93,7 @@
     color: $second-color-light;
     padding: 4px;
 }
-
-//--- DARK --- \/
-
+//--- DARK ---
 .container-dark {
     display: flex;
     flex-direction: column;
@@ -106,13 +104,13 @@
     background-color: $second-background-color-dark;
 }
 
-//-- about me!
 .div-about-dark {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .title-dark {
     font-size: $font-second-title-size;
     font-family: $font-family-pattern;
@@ -120,6 +118,7 @@
     color: $primary-color-dark;
     margin-top: 5px;
 }
+
 .subtitle-dark {
     font-size: $font-text-size;
     font-family: $font-family-pattern;
@@ -127,11 +126,9 @@
     color: $second-color-dark;
     width: 500px;
     text-align: center; 
-
     margin-top: 5px;
 }
 
-//-- icones!
 .div-icone-dark {
     display: flex;
     flex-direction: column;
@@ -147,6 +144,7 @@
     height: 140px;
     align-items: center;
     justify-content: space-around;
+    margin-left: 20px;
 }
 
 .icones-row-2-dark {
@@ -161,6 +159,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .icone-2-dark {
@@ -187,4 +186,66 @@
     font-weight: $font-weight-text;
     color: $second-color-dark;
     padding: 4px;
+}
+
+@media (max-width:600px) {
+    .div-about-light {
+        width: 600px;
+    }   
+    .subtitle-light {
+        width: 390px;
+    }
+    .icones-row-1-light {
+        justify-content: center;
+        gap: 20px;
+        width: 390;
+        margin-left: 20px;
+    }
+    .icones-row-2-light {
+        justify-content: center;
+        gap: 20px;
+        width: 390;
+    }
+    .div-logo {
+        width: 70px;
+        height: auto;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:425px) {
+    .div-about-light {
+        width: 425px;
+    }
+    .subtitle-light {
+        width: 320spx;
+    }
+    .icones-row-1-light {
+        width: auto;
+        justify-content: center;
+    }
+    .icones-row-2-light {
+        width: auto;
+        justify-content: center;
+    }
+}
+
+@media (max-width:300px) {
+    .div-about-light {
+        width: 300px;
+    }
+    .subtitle-light {
+        width: 320spx;
+    }
+    .icones-row-1-light {
+        width: auto;
+        justify-content: center;
+    }
+    .icones-row-2-light {
+        width: auto;
+        justify-content: center;
+    }
+    .div-logo {
+        display: none;
+    }
 }

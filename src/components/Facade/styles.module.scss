@@ -1,23 +1,23 @@
 @import '../../sass/font.scss';
 @import '../../sass/theme.scss';
 
-.containerlight {
+.container-light {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    height: 670px;
-    background-color: $primary-background-color-light;
 }
 
-.divlight {
+.div-light {
+    width: 1200px;
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: $primary-background-color-light;
 }
 
-.divTextlight {
+.div-text-light {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -25,7 +25,7 @@
     padding-left: 100px;
 }
 
-.titlelight {
+.title-light {
     font-family: $font-family-pattern;
     font-weight: $font-weight-primary-title;
     font-size: $font-primary-title-size;
@@ -40,22 +40,19 @@ h1 {
     font-weight: $font-weight-primary-title;
     font-size: $font-primary-title-size;
     color: $primary-color-light;
-
     margin-top: 10px;
     margin-bottom: 1px;
 }
 
-.subtitlelight {
+.subtitle-light {
     font-family: $font-family-pattern;
     font-weight: $font-weight-text;
     font-size: $font-text-size;
     color: $second-color-light;
-
     margin-top: 10px;
-
 }
 
-.divButton {
+.div-button {
     margin-top: 62px;
     display: flex;
     flex-direction: row;
@@ -65,13 +62,12 @@ h1 {
     width: 75%;
 }
 
-.buttonForContact {
+.button-for-contact {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 160px;
     height: 36px;
-
     border-radius: 4px;
     border-style: none;
     background-color: $primary-color-light;
@@ -82,12 +78,11 @@ h1 {
         font-family: $font-family-pattern;
         font-weight:  $font-weight-text;
         font-size: $font-text-size;
-
         padding-left: 4px;
     }
 }
 
-.buttonForDownload {
+.button-for-download {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,23 +101,17 @@ h1 {
         font-family: $font-family-pattern;
         font-weight:  $font-weight-thred-title;
         font-size: $font-text-size;
-
         padding-left: 4px;
     }
 }
 
-
-
-
-
-.divImagelight {
+.div-image-light {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-.backgroundImagelight {
+.background-image-light {
     position: absolute;
     display: flex;
     width: 363px;
@@ -140,26 +129,24 @@ h1 {
     margin-top: 80px;
 }
 
-//--- DARK MODE --------------
-
-.containerdark {
+//---DARK---
+.container-dark {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
     height: 670px;
-    margin: 0 auto;
     background-color: $primary-background-color-dark;
 }
 
-.divdark {
+.div-dark {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: $primary-background-color-dark;
 }
 
-.divTextdark {
+.div-text-dark {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -167,7 +154,7 @@ h1 {
     padding-left: 100px;
 }
 
-.titledark {
+.title-dark {
     font-family: $font-family-pattern;
     font-weight: $font-weight-primary-title;
     font-size: $font-primary-title-size;
@@ -177,7 +164,16 @@ h1 {
     margin-bottom: 1px;
 }
 
-.subtitledark {
+h1 {
+    font-family: $font-family-pattern;
+    font-weight: $font-weight-primary-title;
+    font-size: $font-primary-title-size;
+    color: $primary-color-dark;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+
+.subtitle-dark {
     font-family: $font-family-pattern;
     font-weight: $font-weight-text;
     font-size: $font-text-size;
@@ -185,13 +181,13 @@ h1 {
     margin-top: 10px;
 }
 
-.divImagedark {
+.div-image-dark {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.backgroundImagedark {
+.background-image-dark {
     position: absolute;
     display: flex;
     width: 363px;
@@ -199,8 +195,88 @@ h1 {
     margin-left: -50px;
     border-radius: 100%;
     background-color: $color-elipse;
-
-    z-index: 0;
 }
 
+@media (max-width: 1024px) {
+    .div-light {
+        width: 1024px;
+    }
+}
 
+@media (max-width: 768px) {
+    .div-light {
+        width: 768px;
+    }
+    .div-text-light {
+        padding-left: 80px;
+    }
+    .title-light {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .subtitle-light {
+        width: 300px;
+    }
+    .div-button {
+        margin-top: 30px;
+        gap:30px  ;
+        width: 85%;
+    }
+    .background-image-light {
+        width: 200px;
+        height: 200px;
+        margin-left: -50px;
+        margin-top: 100px;
+    }
+    .image {
+        justify-content: center;
+        align-items: flex-end;
+
+        img {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .div-light {
+        width: 620px;
+    }
+    .background-image-light {
+        display: none;
+    }
+    .subtitle-light {
+        width: 220px;
+    }
+    .div-button {
+        margin-top: 30px;
+        flex-direction: column;
+        gap:20px  ;
+        width: 75%;
+    }
+    .image {
+        justify-content: end;
+        align-items: flex-end;
+
+        img {
+            margin-top: 100px;
+            margin-left: 20px;
+            z-index: 1;
+            width: 280px;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .div-light {
+        width: 300px;
+    }
+    .background-image-light {
+        display: none;
+    }
+    .image {
+        display: none;
+    }
+}

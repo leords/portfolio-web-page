@@ -179,15 +179,29 @@
 }
 
 @media (max-width: 900px) {
-
+    .container-div-light {
+        width: 900px;
+    }
+    .subtitle-light {
+        width: 400px;
+    }
+    .input-light {
+        width: 450px;
+        height: 30px;
+    }
+    .input-light:nth-child(6) {
+        margin-bottom: 45px;
+    }
+    .input-light:nth-child(8) {
+        width: 450px;
+    }
+// --- DARK ---
     .container-div-dark {
         width: 900px;
     }
-
     .subtitle-dark {
         width: 400px;
     }
-
     .input-dark {
         width: 450px;
         height: 30px;
@@ -195,26 +209,38 @@
     .input-dark:nth-child(6) {
         margin-bottom: 45px;
     }
-    
     .input-dark:nth-child(8) {
         width: 450px;
     }
-
     .button-submit {
         width: 450px;
     }
 }
 
 @media (max-width: 600px) {
-
+    .container-div-light {
+        width: 600px;
+    }
+    .subtitle-light {
+        width: 300px;
+    }
+    .input-light {
+        width: 350px;
+        height: 30px;
+    }
+    .input-light:nth-child(6) {
+        margin-bottom: 45px;
+    }
+    .input-light:nth-child(8) {
+        width: 350px;
+    }
+// --- DARK ---
     .container-div-dark {
         width: 600px;
     }
-
     .subtitle-dark {
         width: 300px;
     }
-
     .input-dark {
         width: 350px;
         height: 30px;
@@ -222,26 +248,38 @@
     .input-dark:nth-child(6) {
         margin-bottom: 45px;
     }
-    
     .input-dark:nth-child(8) {
         width: 350px;
     }
-
     .button-submit {
         width: 350px;
     }
 }
 
 @media (max-width: 300px) {
-
+    .container-div-light {
+        width: 300px;
+    }
+    .subtitle-light {
+        width: 250px;
+    }
+    .input-light {
+        width: 220px;
+        height: 20px;
+    }
+    .input-light:nth-child(6) {
+        margin-bottom: 15px;
+    }
+    .input-light:nth-child(8) {
+        width: 220px;
+    }
+// --- DARK ---
     .container-div-dark {
         width: 300px;
     }
-
     .subtitle-dark {
         width: 250px;
     }
-
     .input-dark {
         width: 220px;
         height: 20px;
@@ -249,11 +287,9 @@
     .input-dark:nth-child(6) {
         margin-bottom: 15px;
     }
-    
     .input-dark:nth-child(8) {
         width: 220px;
     }
-
     .button-submit {
         width: 220px;
     }

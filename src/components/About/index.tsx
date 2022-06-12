@@ -21,10 +21,12 @@ export function About() {
                 <div className={styles['div-icone-' + theme]}>
                     <div className={styles['icones-row-1-' + theme]}>
                         <div className={styles['icone-1-' + theme]}>
-                            <Heart 
-                                size={72}
-                                color={'#428A86'}                        
-                            />
+                            <div className={styles['div-logo']}>
+                                <Heart 
+                                    size={72}
+                                    color={'#428A86'}                        
+                                />
+                            </div>
                             <ul>
                                 <li className={styles['list-' + theme]}>God</li>
                                 <li className={styles['list-' + theme]}>Family</li>
@@ -33,10 +35,12 @@ export function About() {
                             </ul>
                         </div>
                         <div className={styles['icone-2-' + theme]}>
-                            <MusicNote
-                                size={72}
-                                color={'#428A86'}                            
-                            />
+                            <div className={styles['div-logo']}>
+                                <MusicNote
+                                    size={72}
+                                    color={'#428A86'}                            
+                                />
+                            </div>
                             <ul>
                                 <li className={styles['list-' + theme]}>Rock</li>
                                 <li className={styles['list-' + theme]}>Countryside</li>
@@ -47,10 +51,12 @@ export function About() {
                     </div>
                     <div className={styles['icones-row-2-' + theme]}>
                         <div className={styles['icone-3-' + theme]}>
-                            <GameController 
-                                size={72}
-                                color={'#428A86'}                            
-                            />
+                            <div className={styles['div-logo']}>
+                                <GameController 
+                                    size={72}
+                                    color={'#428A86'}                            
+                                />
+                            </div>
                             <ul>
                                 <li className={styles['list-' + theme]}>MMORPG</li>
                                 <li className={styles['list-' + theme]}>Running</li>
@@ -58,10 +64,12 @@ export function About() {
                             </ul>
                         </div>
                         <div className={styles['icone-4-' + theme]}>
-                            <Campfire 
-                                size={72}
-                                color={'#428A86'}                            
-                            />
+                            <div className={styles['div-logo']}>
+                                <Campfire 
+                                    size={72}
+                                    color={'#428A86'}                            
+                                />
+                            </div>
                             <ul>
                                 <li className={styles['list-' + theme]}>Fishing</li>
                                 <li className={styles['list-' + theme]}>Camping</li>

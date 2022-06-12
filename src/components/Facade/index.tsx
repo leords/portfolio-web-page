@@ -12,23 +12,23 @@ export function Facade() {
 
 
     return(
-        <div className={styles['container' + theme]}>
-           <div className={styles['div' + theme]}>
-                <div className={styles['divText' + theme]}>
-                    <h1 className={styles['title' + theme]}>Hello, My Name's</h1>
-                    <h1 className={styles['title' + theme]}>Leonardo.</h1>
+        <div className={styles['container-' + theme]}>
+           <div className={styles['div-' + theme]}>
+                <div className={styles['div-text-' + theme]}>
+                    <h1 className={styles['title-' + theme]}>Hello, My Name's</h1>
+                    <h1 className={styles['title-' + theme]}>Leonardo.</h1>
                     <h1>I'm developer</h1>
-                    <p className={styles['subtitle' + theme]}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p className={styles['subtitle-' + theme]}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
-                    <div className={styles.divButton}>
-                        <button className={styles.buttonForContact}>
+                    <div className={styles['div-button']}>
+                        <button className={styles['button-for-contact']}>
                             <User 
                                 size={20} 
                                 weight={'regular'}
                             />
                             <p>Contact me</p>
                         </button>
-                        <button className={styles.buttonForDownload}>
+                        <button className={styles['button-for-download']}>
                             <AddressBook 
                                 size={22} 
                                 weight={'regular'}
@@ -37,11 +37,11 @@ export function Facade() {
                         </button>
                     </div>
                 </div>
-                <div className={styles['divImage' + theme]}>
-                    <div className={styles['backgroundImage' + theme]}>
+                <div className={styles['div-image-' + theme]}>
+                    <div className={styles['background-image-' + theme]}>
 
                     </div>
-                    <div className={styles.image}>
+                    <div className={styles['image']}>
                         <img 
                             src={person} 
                             alt="photo of the professional representing the page" 

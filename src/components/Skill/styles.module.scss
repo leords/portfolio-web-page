@@ -6,10 +6,8 @@
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    height: 980px;
     align-items: center;
     justify-content: center;
-
     background-color: $primary-background-color-light;
 }
 
@@ -19,6 +17,8 @@
     align-items: center;
     justify-content: center;
     width: 1200px;
+    margin-bottom: 115px;
+    margin-top: 115px;
 }
 
 .div-skill-title-light {
@@ -26,6 +26,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .title-light {
@@ -94,15 +95,7 @@
     font-size: 18px;
     font-weight: $font-weight-second-title;
     color: $primary-color-light;
-    margin-bottom: 5px;
-}
-
-.tech-subtitle-light {
-    font-size: $font-text-size;
-    font-family: $font-family-pattern;
-    font-weight: $font-weight-text;
-    color: $second-color-light;
-    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .first-div-logo {
@@ -133,7 +126,6 @@
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    height: 980px;
     align-items: center;
     justify-content: center;
     background-color: $primary-background-color-dark;
@@ -145,6 +137,8 @@
     align-items: center;
     justify-content: center;
     width: 1200px;
+    margin-bottom: 115px;
+    margin-top: 115px;
 }
 
 .div-skill-title-dark {
@@ -220,15 +214,7 @@
     font-size: 18px;
     font-weight: $font-weight-second-title;
     color: $primary-color-dark;
-    margin-bottom: 5px;
-}
-
-.tech-subtitle-dark {
-    font-size: $font-text-size;
-    font-family: $font-family-pattern;
-    font-weight: $font-weight-text;
-    color: $second-color-dark;
-    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .first-div-logo {
@@ -255,5 +241,163 @@
 
 
 @media (max-width:900px) {
+    .container-div-light {
+        width: 900px;
+    }
+    .subtitle-light {
+        width: 500px;
+    }
+    .div-skill-person-img {
+        margin-right: 30px;
+    }
+    .div-image {
+            img {
+                width: 200px;
+            }
+    }
+    .slipse-light {
+        width: 200px;
+        height: 200px;
+    }
+    .div-skill-person-logo {
+        padding: 20px;
+    }
+//---DARK---
+    .container-div-dark {
+        width: 900px;
+    }
+    .subtitle-dark {
+        width: 500px;
+    }
+    .div-skill-person-img {
+        margin-right: 30px;
+    }
+    .div-image {
+            img {
+                width: 200px;
+            }
+    }
+    .slipse-dark {
+        width: 200px;
+        height: 200px;
+    }
+    .div-skill-person-logo {
+        padding: 20px;
+    }
+}
 
+@media (max-width:768px) {
+    .container-div-light {
+        width: 768px;
+    }
+    .subtitle-light {
+        width: 320px;
+    }
+    .div-skill-person {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-top: 100px;
+    }
+    .div-skill-person-img {
+        margin-bottom: 110px;
+    }
+    .div-text-light {
+        align-items: center;
+    }
+//---DARK---
+    .container-div-dark {
+        width: 768px;
+    }
+    .subtitle-dark {
+        width: 320px;
+    }
+    .div-skill-person {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-top: 100px;
+    }
+    .div-skill-person-img {
+        margin-bottom: 110px;
+    }
+    .div-text-dark {
+        align-items: center;
+    }
+}
+
+@media (max-width:425px) {
+    .container-div-light {
+        width: 425px;
+    }
+    .subtitle-light {
+        width: 320px;
+    }
+    .div-skill-person-img {
+        display: none;
+    }
+    .div-text-dark {
+        align-items: center;
+    }
+//---DARK ---
+    .container-div-dark {
+        width: 425px;
+    }
+    .subtitle-dark {
+        width: 320px;
+    }
+    .div-skill-person-img {
+        display: none;
+    }
+    .div-text-dark {
+        align-items: center;
+    }
+}
+
+@media (max-width:300px) {
+    .container-div-light {
+        width: 300px;
+    }
+    .subtitle-light {
+        width: 240px;
+    }
+    .div-skill-person-img {
+        display: none;
+    }
+    .first-div-logo {
+        gap: 4px;
+    }
+    .second-div-logo {
+        gap: 4px;
+
+        .icone:nth-child(5) {
+            margin-left: -4px;
+        }
+    }
+    .icone {
+        height: 25px;
+    }
+//---DARK---
+    .container-div-dark {
+        width: 300px;
+    }
+    .subtitle-dark {
+        width: 240px;
+    }
+    .div-skill-person-img {
+        display: none;
+    }
+    .first-div-logo {
+        gap: 4px;
+    }
+    .second-div-logo {
+        gap: 4px;
+
+        .icone:nth-child(5) {
+            margin-left: -4px;
+        }
+    }
+    .icone {
+        height: 25px;
+    }
 }
