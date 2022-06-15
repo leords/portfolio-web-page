@@ -23,7 +23,7 @@ export function About() {
                         <div className={styles['icone-1-' + theme]}>
                             <div className={styles['div-logo']}>
                                 <Heart 
-                                    size={72}
+                                    size={65}
                                     color={'#5D66D7'}                        
                                 />
                             </div>
@@ -37,7 +37,7 @@ export function About() {
                         <div className={styles['icone-2-' + theme]}>
                             <div className={styles['div-logo']}>
                                 <MusicNote
-                                    size={72}
+                                    size={65}
                                     color={'#5D66D7'}                            
                                 />
                             </div>
@@ -53,7 +53,7 @@ export function About() {
                         <div className={styles['icone-3-' + theme]}>
                             <div className={styles['div-logo']}>
                                 <GameController 
-                                    size={72}
+                                    size={65}
                                     color={'#5D66D7'}                            
                                 />
                             </div>
@@ -66,7 +66,7 @@ export function About() {
                         <div className={styles['icone-4-' + theme]}>
                             <div className={styles['div-logo']}>
                                 <Campfire 
-                                    size={72}
+                                    size={65}
                                     color={'#5D66D7'}                            
                                 />
                             </div>
