@@ -13,7 +13,7 @@ export function About() {
                 <div className={styles['div-about-' + theme]}>
                     <User 
                         size={62}
-                        color={'#428A86'}
+                        color={'#5D66D7'}
                     />
                     <h2 className={styles['title-' + theme]}>About Me</h2>
                     <p className={styles['subtitle-' + theme]}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -24,7 +24,7 @@ export function About() {
                             <div className={styles['div-logo']}>
                                 <Heart 
                                     size={72}
-                                    color={'#428A86'}                        
+                                    color={'#5D66D7'}                        
                                 />
                             </div>
                             <ul>
@@ -38,7 +38,7 @@ export function About() {
                             <div className={styles['div-logo']}>
                                 <MusicNote
                                     size={72}
-                                    color={'#428A86'}                            
+                                    color={'#5D66D7'}                            
                                 />
                             </div>
                             <ul>
@@ -54,7 +54,7 @@ export function About() {
                             <div className={styles['div-logo']}>
                                 <GameController 
                                     size={72}
-                                    color={'#428A86'}                            
+                                    color={'#5D66D7'}                            
                                 />
                             </div>
                             <ul>
@@ -67,7 +67,7 @@ export function About() {
                             <div className={styles['div-logo']}>
                                 <Campfire 
                                     size={72}
-                                    color={'#428A86'}                            
+                                    color={'#5D66D7'}                            
                                 />
                             </div>
                             <ul>

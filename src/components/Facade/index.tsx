@@ -3,6 +3,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 
 import styles from './styles.module.scss';
 
+import frame from '../../assets/person/frame.png';
 import person from '../../assets/person/person01.png';
 import { AddressBook, User } from "phosphor-react";
 
@@ -38,15 +39,14 @@ export function Facade() {
                     </div>
                 </div>
                 <div className={styles['div-image-' + theme]}>
-                    <div className={styles['background-image-' + theme]}>
-
+                    <div className={styles['div-background']}>
+                        <img src={frame} alt="" />
                     </div>
-                    <div className={styles['image']}>
-                        <img 
-                            src={person} 
-                            alt="photo of the professional representing the page" 
-                        />
-                    </div>
+                    <img 
+                        className={styles['image']}
+                        src={person} 
+                        alt="photo of the professional representing the page." 
+                    />
                 </div>
            </div>
         </div>

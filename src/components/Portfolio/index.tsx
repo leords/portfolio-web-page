@@ -20,7 +20,7 @@ export function Portfolio() {
                 <div className={styles['div-portfolio-title']}>
                     <FolderNotchOpen 
                         size={74}
-                        color={'#428A86'}
+                        color={'#5D66D7'}
                     />
                     <h2 className={styles['title']}>Portfolio.</h2>
                     <p className={styles['subtitle-' + theme]}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
