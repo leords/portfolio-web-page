@@ -6,11 +6,12 @@ import styles from './styles.module.scss';
 import frame from '../../assets/person/frame.png';
 import person from '../../assets/person/person01.png';
 import { AddressBook, User } from "phosphor-react";
+import { TranslateContext } from "../../context/TranslateContext";
 
 export function Facade() {
 
-    const{theme, setTheme} = useContext(ThemeContext)
-
+    const {translate} = useContext(TranslateContext)
+    const {theme, setTheme} = useContext(ThemeContext)
 
     return(
         <div className={styles['container-' + theme]}>

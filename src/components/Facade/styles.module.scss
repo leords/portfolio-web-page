@@ -141,11 +141,11 @@ h1 {
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    height: 670px;
-    background-color: $primary-background-color-dark;
 }
 
 .div-dark {
+    width: 1200px;
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: $primary-background-color-dark;
@@ -164,7 +164,6 @@ h1 {
     font-weight: $font-weight-primary-title;
     font-size: $font-primary-title-size;
     color: $second-color-dark;
-
     margin-top: 1px;
     margin-bottom: 1px;
 }
@@ -186,21 +185,55 @@ h1 {
     margin-top: 10px;
 }
 
-.div-image-dark {
+.button-for-contact {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 160px;
+    height: 36px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: $primary-color-light;
+    color: $primary-background-color-light;
+
+    p {
+        color: $primary-background-color-light;
+        font-family: $font-family-pattern;
+        font-weight:  $font-weight-text;
+        font-size: $font-text-size;
+        padding-left: 4px;
+    }
 }
 
-.background-image-dark {
-    position: absolute;
+.button-for-download {
     display: flex;
-    width: 363px;
-    height: 363px;
-    margin-left: -50px;
-    border-radius: 100%;
-    background-color: $color-elipse;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 36px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: $primary-background-color-light;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $primary-color-dark;
+    color: $primary-color-dark;
+
+    p {
+        color: $primary-color-dark;
+        font-family: $font-family-pattern;
+        font-weight:  $font-weight-thred-title;
+        font-size: $font-text-size;
+        padding-left: 4px;
+    }
 }
+
+.div-image-dark {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
 
 @media (max-width: 1024px) {
     .div-light {
