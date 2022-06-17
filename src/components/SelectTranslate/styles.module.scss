@@ -1,0 +1,20 @@
+@import '../../sass/font.scss';
+@import '../../sass/theme.scss';
+
+.container {
+    select {
+        font-size: 11px;
+        color: $primary-color-light;
+        border-color: $primary-color-light;
+        border-radius: 4px;
+        option {
+            font-family: $font-family-pattern;
+            color: $primary-color-light;
+            font-size: 11px;
+        }
+
+        option:hover {
+            border-color: $primary-color-light;
+        }
+    }
+}

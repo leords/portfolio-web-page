@@ -1,7 +1,9 @@
 import { Moon, Sun } from "phosphor-react";
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
+import { TranslateContext } from "../../context/TranslateContext";
 import { Translation } from "../../service/translation";
+import { Select } from "../SelectTranslate";
 import Switch from "../Switch";
 
 import styles from './styles.module.scss';
@@ -9,19 +11,23 @@ import styles from './styles.module.scss';
 export function Menu() {
 
     const {theme, setTheme} = useContext(ThemeContext)
+    const {translate, setTranslate} = useContext(TranslateContext);
 
-    const translate = new Translation();
-
-    const linguageForTranslate = 'english';
+    const language = new Translation();
 
 
-    return(
+    return (
         <div className={styles['container-' + theme]}>
+            <div className={styles['div-select-' + theme]}>
+                <div className={styles['select']}>
+                    <Select />
+                </div>
+            </div>
             <div className={styles['menu-' + theme]}>
                 <div className={styles['list']}>
                         <ul className={styles['nav-' + theme]}>
                             <li>
-                                <a href="#home">{translate[linguageForTranslate].menu.home}</a> 
+                                <a href="#home">{language['english'].menu.home}</a> 
                             </li>
                             <li>
                                 <a href="#about">About me</a> 

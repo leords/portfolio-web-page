@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 
 interface Translate {
-    translate: string,
+    translate: string | null
     setTranslate: (newState: string) => void
 }
 
@@ -9,7 +9,7 @@ export const TranslateContext = createContext<Translate>({} as Translate);
 
 export const TranslateProvider = ({children}: {children: JSX.Element}) => {
 
-    const [translate, setTranslate] = useState('English')
+    const [translate, setTranslate] = useState('english')
 
     return (
         <TranslateContext.Provider value={{translate, setTranslate}}>
