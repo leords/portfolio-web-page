@@ -4,9 +4,6 @@ import { TranslateContext } from "../../context/TranslateContext";
 
 import styles from './styles.module.scss';
 
-import portuguese from '../../assets/icones/brasil.png';
-import english from '../../assets/icones/eua.png';
-
 export function Select() {
 
     const {translate, setTranslate} = useContext(TranslateContext);
@@ -16,16 +13,14 @@ export function Select() {
             <select 
                 name="status" 
                 className=""
-                value={translate}
+                value={translate as any}
                 onChange={(e) => setTranslate(e.target.value)}
             >
                 <option className="" value="english">
-                    <p>EN-US</p>
-                    <img src={english} alt="" />
+                    EN-US
                 </option>
-                <option className="" value="portugueses">
-                    <img src={portuguese} alt="" />
-                    <p>PT-BR</p>
+                <option className="" value="portuguese">
+                    PT-BR
                 </option>
             </select>
         </div>

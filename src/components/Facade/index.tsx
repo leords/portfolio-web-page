@@ -7,20 +7,23 @@ import frame from '../../assets/person/frame.png';
 import person from '../../assets/person/person01.png';
 import { AddressBook, User } from "phosphor-react";
 import { TranslateContext } from "../../context/TranslateContext";
+import { Translation } from "../../service/translation";
 
 export function Facade() {
 
     const {translate} = useContext(TranslateContext)
     const {theme, setTheme} = useContext(ThemeContext)
 
+    const language = new Translation();
+
     return(
         <div className={styles['container-' + theme]}>
            <div className={styles['div-' + theme]}>
                 <div className={styles['div-text-' + theme]}>
-                    <h1 className={styles['title-' + theme]}>Hello, My Name's</h1>
+                    <h1 className={styles['title-' + theme]}>{language[translate].facade.name}</h1>
                     <h1 className={styles['title-' + theme]}>Leonardo.</h1>
-                    <h1>I'm developer</h1>
-                    <p className={styles['subtitle-' + theme]}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <h1>{language[translate].facade.profession}</h1>
+                    <p className={styles['subtitle-' + theme]}>{language[translate].facade.descripition}</p>
 
                     <div className={styles['div-button']}>
                         <button className={styles['button-for-contact']}>
@@ -28,14 +31,14 @@ export function Facade() {
                                 size={20} 
                                 weight={'regular'}
                             />
-                            <p>Contact me</p>
+                            <p>{language[translate].facade.button.buttonContact}</p>
                         </button>
                         <button className={styles['button-for-download']}>
                             <AddressBook 
                                 size={22} 
                                 weight={'regular'}
                             />
-                            <p>Download CV</p>
+                            <p>{language[translate].facade.button.buttonCV}</p>
                         </button>
                     </div>
                 </div>

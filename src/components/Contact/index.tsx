@@ -5,10 +5,15 @@ import { ThemeContext } from "../../context/ThemeContext";
 import styles from './styles.module.scss';
 
 import formsubmitLogo from '../../assets/icones/formSubmit.png';
+import { TranslateContext } from "../../context/TranslateContext";
+import { Translation } from "../../service/translation";
 
 export function Contact() {
 
     const {theme, setTheme} = useContext(ThemeContext);
+    const {translate, setTranslate} = useContext(TranslateContext);
+
+    const language = new Translation();
 
     return (
         <div className={styles['container-' + theme]}>
@@ -18,27 +23,27 @@ export function Contact() {
                         size={74}
                         color={'#5D66D7'}
                     />
-                    <h2 className={styles['title']}>Contact.</h2>
-                    <p className={styles['subtitle-' + theme]}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <h2 className={styles['title']}>{language[translate].contact.title}</h2>
+                    <p className={styles['subtitle-' + theme]}>{language[translate].contact.subtitle}</p>
                 </div>
                 <div className={styles['div-form']}>
                     <form action="">
-                        <p className={styles['label-' + theme]}>Name</p>
+                        <p className={styles['label-' + theme]}>{language[translate].contact.form.name}</p>
                         <input 
                             type="text"
                             className={styles['input-' + theme]}
                         />
-                        <p className={styles['label-' + theme]}>Email</p>
+                        <p className={styles['label-' + theme]}>{language[translate].contact.form.email}</p>
                         <input 
                             type="email" 
                             className={styles['input-' + theme]}
                         />
-                        <p className={styles['label-' + theme]}>Phone</p>
+                        <p className={styles['label-' + theme]}>{language[translate].contact.form.phone}</p>
                         <input 
                             type="text" 
                             className={styles['input-' + theme]}
                         />
-                        <p className={styles['label-' + theme]}>Message</p>
+                        <p className={styles['label-' + theme]}>{language[translate].contact.form.message}</p>
                         <input 
                             type="text" 
                             className={styles['input-' + theme]}
@@ -48,7 +53,7 @@ export function Contact() {
                         type="submit"
                         className={styles['button-submit']}
                     >
-                            Send message!
+                            {language[translate].contact.form.button}
                     </button>
                     <img src={formsubmitLogo} alt="" />
                 </div>

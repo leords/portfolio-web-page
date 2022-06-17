@@ -1,7 +1,11 @@
-import React from "react";
+import { TranslateContext } from './../context/TranslateContext';
+import React, { useContext } from "react";
 
 
 export class Translation {
+    //assinatura de índice!
+    [x: string]: any;
+
     english = {
         menu : {
             home: 'Home',
@@ -9,12 +13,11 @@ export class Translation {
             skills: 'Skills',
             portfolio: 'Portfolio',
             contact: 'Contact',
-            switch: 'Modo'
         },
 
         facade: {
-            name: "Hello, My Name's Leonardo.",
-            function: "I'm developer",
+            name: "Hello, My Name's",
+            profession: "I'm developer",
             descripition: "It makes no sense to look back and think: I should have done this or that, I should have been there. Does not matter. Let\'s invent tomorrow and stop worrying about the past.",
             button: {
                 buttonContact: 'Contact me',
@@ -84,7 +87,7 @@ export class Translation {
                 skills: 'Skills',
                 portfolio: 'Portfolio',
                 contact: 'Contact',
-                switch: 'Modo'
+                cell: 'Cell'
             },
             copyright: 'Leonardo Rodrigues © Copyright 2022. All Rights Reserved To Owners. Developed by Leords.'
         }
@@ -107,8 +110,8 @@ Tradução para o portugues!
         },
 
         facade: {
-            name: "Olá, meu nome é Leonardo.",
-            function: "Sou desenvolvedor",
+            name: "Olá, meu nome é ",
+            profession: "Sou desenvolvedor",
             descripition: "Não faz sentido olhar para trás e pensar: devia ter feito isso ou aquilo, devia ter estado lá. Isso não importa. Vamos inventar o amanhã e parar de nos preocupar com o passado. Steve Jobs",
             button: {
                 buttonContact: 'Entre contato',
@@ -117,7 +120,7 @@ Tradução para o portugues!
         },
 
         about: {
-            title: 'Sobre Mim',
+            title: 'Sobre Mim.',
             subtitle: "Meu nome é Leonardo, tenho 27 anos, sou da cidade de Canoinhas — SC e sou formado em Análise e Desenvolvimento de Sistemas pelo Instituto Federal de Santa Catarina — IFSC. Sou admirador da tecnologia e busco através dos meus estudos entrar no mercado de trabalho de desenvolvimento.",
 
             heart: {
@@ -139,27 +142,27 @@ Tradução para o portugues!
             }, 
             aventure: {
                 aventureFirstItem: 'Pescar',
-                aventureSecondItem: 'Acampamento',
+                aventureSecondItem: 'Acamps',
                 aventureThirdItem: 'Trilha',
                 aventureFourthItem: 'Viagem',
             }
         },
 
         skill: {
-            title: 'Habilidade.',
+            title: 'Habilidades.',
             subtitle: "Estudo para atuar no desenvolvimento de aplicações web, venho desenvolvendo meus projetos de estudos com tecnologias que tenho conhecimento e buscando aprender novas techs.",
             developing: 'Desenvolvimento',
             learning: 'Aprendendo'
         },
 
         portfolio: {
-            title: 'Portfólio',
+            title: 'Portfólio.',
             subtitle: "Portfólio de projetos postados no github, desenvolvidos para estudos e prática. Utilizando recursos conhecidos em cursos e gratuitos.",
             link: 'Acesse o portfólio completo',
         },
 
         contact: {
-            title: 'Contato',
+            title: 'Contato.',
             subtitle: 'Envie um email para mim, seja para me contratar rsrsrs ou apenas para dar um feedback do você viu nesse curto momento. Obrigado!',
 
             form: {
@@ -178,10 +181,11 @@ Tradução para o portugues!
                 skills: 'Habilidade',
                 portfolio: 'Portfólio',
                 contact: 'Contato',
-                switch: 'Modo'
+                cell: 'Celular'
             },
             copyright: 'Leonardo Rodrigues © Copyright 2022. Todos Os Direitos Reservados Aos Proprietários. Desenvolvido por Leords'
         }
 
     }
 }
+

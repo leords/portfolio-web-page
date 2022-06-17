@@ -7,11 +7,16 @@ import { Card } from "../Card";
 import styles from './styles.module.scss';
 
 import {MyPortfolio} from '../../service/project-portfolio'
+import { Translation } from "../../service/translation";
+import { TranslateContext } from "../../context/TranslateContext";
 
 
 export function Portfolio() {
 
     const {theme, setTheme} = useContext(ThemeContext);
+    const {translate, setTranslate} = useContext(TranslateContext);
+
+    const language = new Translation();
     const listPortfolioPage = new MyPortfolio()
 
     return(
@@ -22,8 +27,8 @@ export function Portfolio() {
                         size={74}
                         color={'#5D66D7'}
                     />
-                    <h2 className={styles['title']}>Portfolio.</h2>
-                    <p className={styles['subtitle-' + theme]}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <h2 className={styles['title']}>{language[translate].portfolio.title}</h2>
+                    <p className={styles['subtitle-' + theme]}>{language[translate].portfolio.subtitle}.</p>
                 </div>
                     <ul className={styles['container-card']}>
                         <li>
@@ -72,7 +77,7 @@ export function Portfolio() {
                             href=""
                             className={styles['link-portfolio-complete-' + theme]}
                         >
-                            Acessar portfolio completo
+                            {language[translate].portfolio.link}
                         </a>
                     </div>
             </div>

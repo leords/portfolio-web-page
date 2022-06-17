@@ -1,12 +1,17 @@
 import { Campfire, GameController, Heart, MusicNote, User } from "phosphor-react";
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
+import { TranslateContext } from "../../context/TranslateContext";
+import { Translation } from "../../service/translation";
 
 import styles from './styles.module.scss';
 
 export function About() {
 
     const {theme, setTheme} = useContext(ThemeContext);
+    const {translate, setTranslate} = useContext(TranslateContext);
+
+    const language = new Translation();
 
     return(
         <div className={styles['container-' + theme]}>
@@ -15,8 +20,8 @@ export function About() {
                         size={62}
                         color={'#5D66D7'}
                     />
-                    <h2 className={styles['title-' + theme]}>About Me</h2>
-                    <p className={styles['subtitle-' + theme]}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <h2 className={styles['title-' + theme]}>{language[translate].about.title}</h2>
+                    <p className={styles['subtitle-' + theme]}>{language[translate].about.subtitle}</p>
                 </div>
                 <div className={styles['div-icone-' + theme]}>
                     <div className={styles['icones-row-1-' + theme]}>
@@ -28,10 +33,10 @@ export function About() {
                                 />
                             </div>
                             <ul>
-                                <li className={styles['list-' + theme]}>God</li>
-                                <li className={styles['list-' + theme]}>Family</li>
-                                <li className={styles['list-' + theme]}>Girlfriend</li>
-                                <li className={styles['list-' + theme]}>Friends</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.heart.heartFirstItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.heart.heartSecondItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.heart.heartThirdItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.heart.heartFourthItem}</li>
                             </ul>
                         </div>
                         <div className={styles['icone-2-' + theme]}>
@@ -42,10 +47,10 @@ export function About() {
                                 />
                             </div>
                             <ul>
-                                <li className={styles['list-' + theme]}>Rock</li>
-                                <li className={styles['list-' + theme]}>Countryside</li>
-                                <li className={styles['list-' + theme]}>Pop</li>
-                                <li className={styles['list-' + theme]}>Samba</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.music.musicFirstItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.music.musicSecondItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.music.musicThirdItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.music.musicFourthItem}</li>
                             </ul>
                         </div>
                     </div>
@@ -58,9 +63,9 @@ export function About() {
                                 />
                             </div>
                             <ul>
-                                <li className={styles['list-' + theme]}>MMORPG</li>
-                                <li className={styles['list-' + theme]}>Running</li>
-                                <li className={styles['list-' + theme]}>Aventure</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.game.gameFirstItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.game.gameSecondItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.game.gameThirdItem}</li>
                             </ul>
                         </div>
                         <div className={styles['icone-4-' + theme]}>
@@ -71,10 +76,10 @@ export function About() {
                                 />
                             </div>
                             <ul>
-                                <li className={styles['list-' + theme]}>Fishing</li>
-                                <li className={styles['list-' + theme]}>Camping</li>
-                                <li className={styles['list-' + theme]}>Trail</li>
-                                <li className={styles['list-' + theme]}>Travel</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.aventure.aventureFirstItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.aventure.aventureSecondItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.aventure.aventureThirdItem}</li>
+                                <li className={styles['list-' + theme]}>{language[translate].about.aventure.aventureFourthItem}</li>
                             </ul>
                         </div>      
                     </div>

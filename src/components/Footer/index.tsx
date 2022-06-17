@@ -1,14 +1,19 @@
 import { FacebookLogo, InstagramLogo, LinkedinLogo, WhatsappLogo } from "phosphor-react";
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
+import { TranslateContext } from "../../context/TranslateContext";
 
 import { Mydados } from "../../service/project-portfolio";
+import { Translation } from "../../service/translation";
 
 import styles from './styles.module.scss';
 
 export function Footer() {
 
     const {theme, setTheme} = useContext(ThemeContext);
+    const {translate, setTranslate} = useContext(TranslateContext);
+
+    const language = new Translation();
     const personData = new Mydados()
 
     return (
@@ -22,7 +27,7 @@ export function Footer() {
                             <p>{personData.person.email}</p>
                         </div>
                         <div className={styles['cell']}>
-                            <p>Cell:</p>
+                            <p>{language[translate].footer.menu.cell}:</p>
                             <p>{personData.person.cell}</p>
                         </div>
                     </div>
@@ -31,31 +36,31 @@ export function Footer() {
                             <li>
                                 <a 
                                     href="#home">
-                                    Home
+                                    {language[translate].footer.menu.home}
                                 </a>
                             </li>
                             <li>
                                 <a 
                                     href="#about">
-                                    About me
+                                    {language[translate].footer.menu.about}
                                 </a>
                             </li>
                             <li>
                                 <a 
                                     href="#skills">
-                                    Skills
+                                    {language[translate].footer.menu.skills}
                                 </a>
                             </li>
                             <li>
                                 <a 
                                     href="#portfolio">
-                                    Portfolio
+                                    {language[translate].footer.menu.portfolio}
                                 </a>
                             </li>
                             <li>
                                 <a 
                                     href="#contact">
-                                    Contact
+                                    {language[translate].footer.menu.contact}
                                 </a>
                             </li>
                         </ul>
@@ -96,7 +101,7 @@ export function Footer() {
                     </a>
                 </div>
                 <div className={styles['div-dev']}>
-                    <p>Leonardo Rodrigues © Copyright 2022. Todos Os Direitos Reservados Aos Proprietários. Desenvolvido por Leords</p>
+                    <p>{language[translate].footer.copyright}</p>
                 </div>
             </div>
         </div>

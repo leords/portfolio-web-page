@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 
 interface Translate {
-    translate: string | null
+    translate: string
     setTranslate: (newState: string) => void
 }
 
