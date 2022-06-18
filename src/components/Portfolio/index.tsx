@@ -1,8 +1,8 @@
 import { FolderNotchOpen } from "phosphor-react";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import api from "../../service/api";
 import { Card } from "../Card";
+import { useNavigate } from "react-router-dom";
 
 import styles from './styles.module.scss';
 
@@ -13,8 +13,9 @@ import { TranslateContext } from "../../context/TranslateContext";
 
 export function Portfolio() {
 
-    const {theme, setTheme} = useContext(ThemeContext);
-    const {translate, setTranslate} = useContext(TranslateContext);
+    const {theme} = useContext(ThemeContext);
+    const {translate} = useContext(TranslateContext);
+    const nagivate = useNavigate()
 
     const language = new Translation();
     const listPortfolioPage = new MyPortfolio()
@@ -76,6 +77,9 @@ export function Portfolio() {
                         <a 
                             href=""
                             className={styles['link-portfolio-complete-' + theme]}
+                            onClick={() => {
+                                nagivate('/portfolio')
+                            }}
                         >
                             {language[translate].portfolio.link}
                         </a>
@@ -85,16 +89,3 @@ export function Portfolio() {
     )
 }
 
-
-/* const [listProject, setListProject] = useState([])
-useEffect(() => {
-    async function returnAllGitProject() {
-        api.get('/leords/repos').then(response => {
-            setListProject(response.data)
-        })
-    }
-
-    console.log(listProject)
-
-    returnAllGitProject()
-},[]) */

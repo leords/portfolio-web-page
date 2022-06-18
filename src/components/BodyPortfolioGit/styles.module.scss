@@ -1,0 +1,51 @@
+@import '../../sass/font.scss';
+@import '../../sass/theme.scss';
+
+.container-light {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.div-container-light {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.list {
+    width:100%;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    list-style: none; 
+    column-gap: 75px;
+    row-gap: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 380px;
+    height: 320px;
+}
+
+//--- DARK --- 
+
+.container-dark {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: $primary-background-color-dark;
+}
+
+.div-container-dark {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+}
