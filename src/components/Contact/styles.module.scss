@@ -52,6 +52,11 @@
     justify-content: center;
     margin-bottom: 100px;
 
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
     img {
         width: 150px;
     }
@@ -75,11 +80,11 @@
     border-style: solid;
 }
 
-.input-light:nth-child(6) {
-    margin-bottom: 45px;
+.input-light:nth-child(8) {
+    margin-bottom: 20px;
 }
 
-.input-light:nth-child(8) {
+.input-light:nth-child(10) {
     width:540px;
     height: 120px;
     border-radius: 4px;

@@ -27,7 +27,20 @@ export function Contact() {
                     <p className={styles['subtitle-' + theme]}>{language[translate].contact.subtitle}</p>
                 </div>
                 <div className={styles['div-form']}>
-                    <form action="">
+                    <form 
+                        action="https://formsubmit.co/leo.ro.drigues@hotmail.com"
+                        method="POST"
+                        >
+                        <input 
+                            type="hidden" 
+                            name="_autoresponse" 
+                            value="Recebemos sua mensagem, agradeçemos o contato e logo entraremos em contato!"
+                        />
+                        <input 
+                            type="hidden"
+                            name="_captcha"
+                            value="false" 
+                        />
                         <p className={styles['label-' + theme]}>{language[translate].contact.form.name}</p>
                         <input 
                             type="text"
@@ -44,17 +57,18 @@ export function Contact() {
                             className={styles['input-' + theme]}
                         />
                         <p className={styles['label-' + theme]}>{language[translate].contact.form.message}</p>
-                        <input 
-                            type="text" 
+                        <textarea 
+                            placeholder="Escreva sua mensagem"
                             className={styles['input-' + theme]}
                         />
+
+                        <button 
+                            type="submit"
+                            className={styles['button-submit']}
+                        >
+                                {language[translate].contact.form.button}
+                        </button>
                     </form>
-                    <button 
-                        type="submit"
-                        className={styles['button-submit']}
-                    >
-                            {language[translate].contact.form.button}
-                    </button>
                     <img src={formsubmitLogo} alt="" />
                 </div>
             </div>

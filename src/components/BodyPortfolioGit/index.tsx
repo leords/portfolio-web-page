@@ -7,7 +7,9 @@ import styles from './styles.module.scss';
 
 interface ProjectGit {
     id: number
-    avatar_url: string
+    owner: {
+        avatar_url: string
+    }
     name: string
     language: string
     description:string
@@ -18,7 +20,7 @@ export function BodyPortfolio() {
 
     const {theme} = useContext(ThemeContext)
 
-    const [gitProjectReturn, setProjectReturn] = useState() 
+    const [gitProjectReturn, setProjectReturn] = useState<ProjectGit[]>([]) 
 
     useEffect(() => { 
         async function userReturn() {
@@ -34,7 +36,7 @@ export function BodyPortfolio() {
         <div className={styles['container-' + theme]}>
             <div className={styles['div-container-' + theme]}>
                 <ul className={styles['list']}>
-                    {gitProjectReturn?.map((project: { owner: {avatar_url: string; }; id: number; name: string; language: string; stargazers_count:number }) => {
+                    {gitProjectReturn.map(project  => {
                         return (
                             <li
                                 key={project?.id} 
