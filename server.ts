@@ -13,6 +13,15 @@ app.use('/',
     )
 )
 
+app.use('/portfolio', 
+    express.static (
+        resolve (
+            __dirname,
+            './dist'
+        )
+    )
+)
+
 
 app.listen(process.env.PORT || 3000, (err) => {
     if (err)
