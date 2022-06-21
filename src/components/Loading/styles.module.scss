@@ -1,0 +1,44 @@
+@import '../../sass/font.scss';
+@import '../../sass/theme.scss';
+
+.container {
+    max-width: 1200px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-logo {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+    25% {
+		transform: rotate(80deg);
+	}
+    50% {
+		transform: rotate(160deg);
+	}
+    75% {
+		transform: rotate(240deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.logo {
+    width: max-content;
+    color: $primary-color-light;
+    animation: loading 2s linear infinite;
+}
+
+

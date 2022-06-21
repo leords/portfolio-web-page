@@ -16,19 +16,23 @@ interface ProjectGit {
     stargazers_count:number
 }
 
-export function BodyPortfolio() {
+interface Props {
+    renderLoading: (type: boolean) => void
+}
 
-    const {theme} = useContext(ThemeContext)
+export function BodyPortfolio({renderLoading} : Props) {
 
     const [gitProjectReturn, setProjectReturn] = useState<ProjectGit[]>([]) 
+    const {theme} = useContext(ThemeContext)
 
     useEffect(() => { 
         async function userReturn() {
-            api.get('/leords/repos').then(response => {
+            renderLoading(true)
+            await api.get('/leords/repos').then(response => {
                 setProjectReturn(response.data)
-            }) 
+            })
+            renderLoading(false) 
         }
-        console.log(gitProjectReturn)
         userReturn();
     }, []) 
 

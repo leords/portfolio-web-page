@@ -15,17 +15,23 @@ interface UserGit {
     public_repos: number
 }
 
-export function Header() {
+interface Props {
+    renderLoading: (type: boolean) => void
+}
+
+export function Header({renderLoading} : Props) {
     const [gitUserReturn, setGitUserReturn] = useState<UserGit>() 
     const {theme} = useContext(ThemeContext)
 
     useEffect(() => {
         async function userReturn() {
-            api.get('/leords').then(response => {
+            renderLoading(true)
+            await api.get('/leords').then(response => {
                 setGitUserReturn(response.data)
             })
+            renderLoading(false)
         }
-        console.log(gitUserReturn)
+        renderLoading(false)
         userReturn();
     }, []) 
 

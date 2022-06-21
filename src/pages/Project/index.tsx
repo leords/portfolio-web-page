@@ -1,30 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { BodyPortfolio } from "../../components/BodyPortfolioGit";
 import { Header } from "../../components/HeaderPortfolioGit";
-import api from "../../service/api";
+import { Loading } from "../../components/Loading";
 
 import styles from './styles.module.scss';
 
 export function Project() {
 
+    const [loading, setLoading] = useState(false);
 
-const [listOfAllProjects, setlistOfAllProjects] = useState([])
-
-    useEffect(() => {
-        async function ProjectsReturn() {
-            api.get('/leords/repos').then(response => {
-                setlistOfAllProjects(response.data)
-            })
-        }
-        console.log(listOfAllProjects)
-        ProjectsReturn();
-    },[])
-
-
-    return(
+    return (
         <div className={styles['container']}>
-            <Header />
-            <BodyPortfolio />
+            { loading ? (
+                <Loading />
+            ) : (
+                <>
+                <Header 
+                    renderLoading={setLoading}
+                />
+                <BodyPortfolio 
+                    renderLoading={setLoading}
+                />
+                </>
+            )}
         </div>
     )
 }
