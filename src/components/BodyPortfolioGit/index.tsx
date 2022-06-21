@@ -33,6 +33,7 @@ export function BodyPortfolio({renderLoading} : Props) {
             })
             renderLoading(false) 
         }
+        renderLoading(false) 
         userReturn();
     }, []) 
 

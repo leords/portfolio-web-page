@@ -7,19 +7,20 @@ import styles from './styles.module.scss';
 
 export function Project() {
 
-    const [loading, setLoading] = useState(false);
+    const [loadingHeader, setLoadingHeader] = useState(false);
+    const [loadingBody, setLoadingBody] = useState(false);
 
     return (
         <div className={styles['container']}>
-            { loading ? (
+            { loadingHeader && loadingBody ? (
                 <Loading />
             ) : (
                 <>
                 <Header 
-                    renderLoading={setLoading}
+                    renderLoading={setLoadingHeader}
                 />
                 <BodyPortfolio 
-                    renderLoading={setLoading}
+                    renderLoading={setLoadingBody}
                 />
                 </>
             )}
