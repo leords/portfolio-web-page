@@ -26,6 +26,7 @@ export function Facade() {
                     <h1 className={styles['title-' + theme]}>Leonardo.</h1>
                     <h1>{language[translate].facade.profession}</h1>
                     <p className={styles['subtitle-' + theme]}>{language[translate].facade.descripition}</p>
+                    <p className={styles['author-' + theme]}>{language[translate].facade.author}</p>
 
                     <div className={styles['div-button']}>
                         <a 
@@ -56,15 +57,17 @@ export function Facade() {
                         </a>
                     </div>
                 </div>
-                <div className={styles['div-image-' + theme]}>
+                <div className={styles['container-image-' + theme]}>
                     <div className={styles['div-background']}>
                         <img src={frame} alt="" />
                     </div>
-                    <img 
-                        className={styles['image']}
-                        src={person} 
-                        alt="photo of the professional representing the page." 
-                    />
+                    <div className={styles['div-image']}>
+                        <img 
+                            className={styles['image']}
+                            src={person} 
+                            alt="photo of the professional representing the page." 
+                        />
+                    </div>
                 </div>
            </div>
         </div>

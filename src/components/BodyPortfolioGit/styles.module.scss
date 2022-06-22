@@ -49,3 +49,24 @@
     justify-content: center;
     margin-top: 64px;
 }
+
+@media (max-width: 900px) {
+    .container-light {
+        max-width: 900px;  
+    }
+    
+    .div-container-light {
+        width: 900px;
+        margin-top: 40px;
+    }
+    
+    .list {
+        display: grid;
+        grid-template-columns: 400px;
+    }
+    
+    .card {
+        width: 380px;
+        height: 320px;
+    }
+}

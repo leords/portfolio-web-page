@@ -21,8 +21,9 @@
 .select {
     display: flex;
     width: 85%;
+    height: auto;
     justify-content: end;
-    margin-top: 10px;
+    align-items: center;
 }
 
 .menu-light {
@@ -232,7 +233,7 @@
     }
     .button-toggle-light {
         width: 20%;
-        height: 100%;
+        height: 60%;
     }
 //---DARK ---
     .container-dark {
@@ -250,7 +251,8 @@
     }
     .button-toggle-dark {
         width: 20%;
-        height: 100%;
+        height: 60%;
+        padding-right: 20px;
     }
 }
 
@@ -264,8 +266,9 @@
         align-items: center;
     }
     .select {
-        width: 85%;
+        width: 70%;
         justify-content: end;
+        padding-right: 10px;
     }
     .menu-light {
         width: 425px;
@@ -293,6 +296,7 @@
         width: 25%;
         height: 90%;
         margin-top: 5px;
+        padding-right: 20px;
     }  
  
 //---DARK ---

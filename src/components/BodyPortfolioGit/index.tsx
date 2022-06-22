@@ -31,10 +31,9 @@ export function BodyPortfolio({renderLoading} : Props) {
             await api.get('/leords/repos').then(response => {
                 setProjectReturn(response.data)
             })
-            renderLoading(false) 
         }
-        renderLoading(false) 
         userReturn();
+        renderLoading(false)
     }, []) 
 
     return (

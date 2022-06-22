@@ -19,6 +19,7 @@ export class Translation {
             name: "Hello, My Name's",
             profession: "I'm developer",
             descripition: "It makes no sense to look back and think: I should have done this or that, I should have been there. Does not matter. Let\'s invent tomorrow and stop worrying about the past.",
+            author:'Steve Jobs',
             button: {
                 buttonContact: 'Contact me',
                 buttonCV: 'Download CV'
@@ -89,7 +90,7 @@ export class Translation {
                 contact: 'Contact',
                 cell: 'Cell'
             },
-            copyright: 'Leonardo Rodrigues © Copyright 2022. All Rights Reserved To Owners. Developed by Leords.'
+            copyright: 'Leonardo Rodrigues ©Copyright 2022. Developed by Leords.'
         }
     }
 
@@ -112,7 +113,8 @@ Tradução para o portugues!
         facade: {
             name: "Olá, meu nome é ",
             profession: "Sou desenvolvedor",
-            descripition: "Não faz sentido olhar para trás e pensar: devia ter feito isso ou aquilo, devia ter estado lá. Isso não importa. Vamos inventar o amanhã e parar de nos preocupar com o passado. Steve Jobs",
+            descripition: "Não faz sentido olhar para trás e pensar: devia ter feito isso ou aquilo, devia ter estado lá. Isso não importa. Vamos inventar o amanhã e parar de nos preocupar com o passado.",
+            author:'Steve Jobs',
             button: {
                 buttonContact: 'Entre contato',
                 buttonCV: 'Baixar CV'
@@ -183,7 +185,7 @@ Tradução para o portugues!
                 contact: 'Contato',
                 cell: 'Celular'
             },
-            copyright: 'Leonardo Rodrigues © Copyright 2022. Todos Os Direitos Reservados Aos Proprietários. Desenvolvido por Leords'
+            copyright: 'Leonardo Rodrigues ©Copyright 2022. Desenvolvido por Leords'
         }
 
     }
