@@ -63,6 +63,9 @@
     .list {
         display: grid;
         grid-template-columns: 400px;
+        margin-bottom: 10px;
+        column-gap: 0px;
+        row-gap: 80px;
     }
     
     .card {
