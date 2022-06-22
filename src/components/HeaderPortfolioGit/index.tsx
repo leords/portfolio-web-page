@@ -25,14 +25,13 @@ export function Header({renderLoading} : Props) {
 
     useEffect(() => {
         async function userReturn() {
-            renderLoading(true)
-            await api.get('/leords').then(response => {
+            await renderLoading(true)
+            api.get('/leords').then(response => {
                 setGitUserReturn(response.data)
             })
-            renderLoading(false)
         }
-        renderLoading(false)
         userReturn();
+        renderLoading(false)
     }, []) 
 
     return(

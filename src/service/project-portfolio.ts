@@ -3,6 +3,8 @@ import React from "react";
 import pokedex from '../assets/image-project/pokedex.png';
 import postIt from '../assets/image-project/post-it.png';
 import webPage from '../assets/image-project/web-page.png'; 
+import portfolioDark from '../assets/image-project/portfolio-darkmode.png';
+import portfolioLight from '../assets/image-project/portfolio-lightmode.png';
 
 
 export class Mydados {
@@ -19,33 +21,66 @@ export class Mydados {
 }
 
 export class MyPortfolio {
+    [x: string]: any;
 
-    project01 = {
-        image: pokedex,
-        descripition: 'Pokedex é um projeto de estudos, a idéia consiste em criar uma carteira de pokemons, utilizando a API Poke.',
-        tech: 'ReactJS, TypeScript, Sass, Firebase.',
-        link: 'https://github.com/leords/web-pokedex'
-    }
+    english = {
+        firstProject : {
+            image: pokedex,
+            descripition: 'Pokedex is a study project, the idea is to create a portfolio of pokemons, using the Poke API.',
+            tech: 'ReactJS, TypeScript, Sass, Firebase.',
+            link: 'https://github.com/leords/web-pokedex'
+        },
+        
+        SecondProject: {
+            image: postIt,
+            descripition: 'Post-it is a project for studies with the idea of ​​generating a way to manage daily tasks with authentication and CRUD of tasks and projects.',
+            tech: 'ReactJS, TypeScript, Tailwind, Prisma, Node',
+            link: 'https://github.com/leords/my-post-it'
+        },
     
-    project02 = {
-        image: postIt,
-        descripition: 'Post-it é um projeto para estudos com a idéia de gerar uma forma de gerencias tarefas diárias com authenticação e CRUD de tarejas e projetos',
-        tech: 'ReactJS, TypeScript, Tailwind, Prisma, Node',
-        link: 'https://github.com/leords/my-post-it'
+        ThirdProject: {
+            image: webPage,
+            descripition: 'This project aims to develop a professional profile page, where it is possible to communicate with users and demonstrate projects.',
+            tech: 'ReactJS, TypeScript, Sass, CSS, HTML',
+            link: 'https://github.com/leords/practicing-web-page-profile'
+        },
+    
+        FourthProject: {
+            image: portfolioLight,
+            descripition: 'Pokedex é um projeto de estudos, a idéia consiste em uma pokedex utilizando ferramentas disponiveis e de fácil acesso.',
+            tech: 'H, TypeScript, Sass, Firebase',
+            link: 'https://github.com/leords/web-pokedex'
+        }
     }
 
-    project03 = {
-        image: webPage,
-        descripition: 'Este projeto tem como objetivo desenvolver uma pagina de perfil profissional, onde é possivel à comunição com usuário e a demonstração de projetos.',
-        tech: 'ReactJS, TypeScript, Sass, CSS, HTML',
-        link: 'https://github.com/leords/practicing-web-page-profile'
-    }
+    portuguese = {
+        firstProject : {
+            image: pokedex,
+            descripition: 'Pokedex is a study project, the idea is to create a portfolio of pokemons, using the Poke API.',
+            tech: 'ReactJS, TypeScript, Sass, Firebase.',
+            link: 'https://github.com/leords/web-pokedex'
+        },
+        
+        SecondProject: {
+            image: postIt,
+            descripition: 'Post-it é um projeto para estudos com a idéia de gerar uma forma de gerencias tarefas diárias com authenticação e CRUD de tarejas e projetos',
+            tech: 'ReactJS, TypeScript, Tailwind, Prisma, Node',
+            link: 'https://github.com/leords/my-post-it'
+        },
+    
+        ThirdProject: {
+            image: webPage,
+            descripition: 'Este projeto tem como objetivo desenvolver uma pagina de perfil profissional, onde é possivel à comunição com usuário e a demonstração de projetos.',
+            tech: 'ReactJS, TypeScript, Sass, CSS, HTML',
+            link: 'https://github.com/leords/practicing-web-page-profile'
+        },
+    
+        FourthProject: {
+            image: pokedex,
+            descripition: 'Pokedex é um projeto de estudos, a idéia consiste em uma pokedex utilizando ferramentas disponiveis e de fácil acesso.',
+            tech: 'H, TypeScript, Sass, Firebase',
+            link: 'https://github.com/leords/web-pokedex'
+        }
 
-    project04 = {
-        image: pokedex,
-        descripition: 'Pokedex é um projeto de estudos, a idéia consiste em uma pokedex utilizando ferramentas disponiveis e de fácil acesso.',
-        tech: 'H, TypeScript, Sass, Firebase',
-        link: 'https://github.com/leords/web-pokedex'
     }
-
 }

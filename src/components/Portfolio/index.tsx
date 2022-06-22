@@ -18,7 +18,7 @@ export function Portfolio() {
     const nagivate = useNavigate()
 
     const language = new Translation();
-    const listPortfolioPage = new MyPortfolio()
+    const manuallyInsertedProjects = new MyPortfolio()
 
     return(
         <div className={styles['container-' + theme]}>
@@ -35,40 +35,40 @@ export function Portfolio() {
                         <li>
                             <div className={styles['card-' + theme]}>
                                 <Card 
-                                    image={listPortfolioPage.project01.image}
-                                    descripition={listPortfolioPage.project01.descripition}
-                                    tech={listPortfolioPage.project01.tech}
-                                    link={listPortfolioPage.project01.link}
+                                    image={manuallyInsertedProjects[translate].firstProject.image}
+                                    descripition={manuallyInsertedProjects[translate].firstProject.descripition}
+                                    tech={manuallyInsertedProjects[translate].firstProject.tech}
+                                    link={manuallyInsertedProjects[translate].firstProject.link}
                                 />
                             </div> 
                         </li>
                         <li>
                             <div className={styles['card-' + theme]}>
                                 <Card 
-                                    image={listPortfolioPage.project02.image}
-                                    descripition={listPortfolioPage.project02.descripition}
-                                    tech={listPortfolioPage.project02.tech}
-                                    link={listPortfolioPage.project02.link}
+                                    image={manuallyInsertedProjects[translate].SecondProject.image}
+                                    descripition={manuallyInsertedProjects[translate].SecondProject.descripition}
+                                    tech={manuallyInsertedProjects[translate].SecondProject.tech}
+                                    link={manuallyInsertedProjects[translate].SecondProject.link}
                                 />
                             </div> 
                         </li>
                         <li>
                             <div className={styles['card-' + theme]}>
                                 <Card 
-                                    image={listPortfolioPage.project03.image}
-                                    descripition={listPortfolioPage.project03.descripition}
-                                    tech={listPortfolioPage.project03.tech}
-                                    link={listPortfolioPage.project03.link}
+                                    image={manuallyInsertedProjects[translate].ThirdProject.image}
+                                    descripition={manuallyInsertedProjects[translate].ThirdProject.descripition}
+                                    tech={manuallyInsertedProjects[translate].ThirdProject.tech}
+                                    link={manuallyInsertedProjects[translate].ThirdProject.link}
                                 />
                             </div> 
                         </li>
                         <li>
                             <div className={styles['card-' + theme]}>
                                 <Card 
-                                    image={listPortfolioPage.project04.image}
-                                    descripition={listPortfolioPage.project04.descripition}
-                                    tech={listPortfolioPage.project04.tech}
-                                    link={listPortfolioPage.project04.link}
+                                    image={manuallyInsertedProjects[translate].FourthProject.image}
+                                    descripition={manuallyInsertedProjects[translate].FourthProject.descripition}
+                                    tech={manuallyInsertedProjects[translate].FourthProject.tech}
+                                    link={manuallyInsertedProjects[translate].FourthProject.link}
                                 />
                             </div> 
                         </li>
