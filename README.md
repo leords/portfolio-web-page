@@ -5,7 +5,7 @@
 <br>
 
 <p align="center">
-  <img alt="Aplicação no modo dark" src="../assets/image-project/portfolio-darkmode.png" width="100%">
+  <img alt="Aplicação no modo dark" src="image-project/portfolio-darkmode.png" width="100%">
 </p>
 
 <p align="center">
