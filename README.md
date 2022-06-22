@@ -28,7 +28,7 @@ Bibliotecas
 - express
 
 Ferramentas
-- [Heroku](https://vercel.com/](https://www.heroku.com/)
+- [Heroku](https://www.heroku.com/)
 - [FormSubmit](https://formsubmit.co/)
 - API Git
 
