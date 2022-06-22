@@ -5,11 +5,11 @@
 <br>
 
 <p align="center">
-  <img alt="Aplicação no modo dark" src="image-project/portfolio-darkmode.png" width="100%">
+  <img alt="Aplicação no modo dark" src="./src/assets/image-project/portfolio-darkmode.png" width="100%">
 </p>
 
 <p align="center">
-  <img alt="Aplicação no modo light" src="../assets/image-project/portfolio-lightmode.png" width="100%">
+  <img alt="Aplicação no modo light" src="./src/assets/image-project/portfolio-lightmode.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
