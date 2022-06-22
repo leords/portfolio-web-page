@@ -69,7 +69,7 @@ export class Translation {
         },
 
         contact: {
-            title: 'Portfolio',
+            title: 'Contact',
             subtitle: "Portfolio of projects posted on github, developed for study and practice. Using known resources in courses and free.",
 
             form: {

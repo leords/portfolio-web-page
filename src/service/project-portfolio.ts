@@ -76,7 +76,7 @@ export class MyPortfolio {
         },
     
         FourthProject: {
-            image: pokedex,
+            image: portfolioLight,
             descripition: 'Aplicação desenvolvida para servir como portfolio, demonstrando projetos de estudos e apresentação pessoal.',
             tech: 'H, TypeScript, Sass, Firebase',
             link: 'https://github.com/leords/web-pokedex'
