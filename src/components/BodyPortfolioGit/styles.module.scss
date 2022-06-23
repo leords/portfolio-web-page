@@ -5,11 +5,14 @@
     max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;   
+    padding-bottom: 80px; 
 }
 
 .div-container-light {
     width: 1200px;
+    height: auto;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,10 +39,12 @@
 
 .container-dark {
     max-width: 1200px;
+    height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     background-color: $primary-background-color-dark;
+    padding-bottom: 80px;
 }
 
 .div-container-dark {
@@ -52,24 +57,47 @@
 
 @media (max-width: 900px) {
     .container-light {
-        max-width: 900px;  
+        width: 900px;  
     }
-    
     .div-container-light {
         width: 900px;
         margin-top: 40px;
-    }
-    
+    }  
     .list {
         display: grid;
         grid-template-columns: 400px;
         margin-bottom: 10px;
         column-gap: 0px;
         row-gap: 80px;
-    }
-    
+    }  
     .card {
         width: 380px;
         height: 320px;
+    }
+//---DARK---
+    .container-dark {
+        width: 900px;  
+    } 
+    .div-container-dark {
+        width: 900px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-light {
+        width: 600px;  
+    }
+}
+
+@media (max-width: 425px) {
+    .container-light {
+        width: 425px;  
+    }
+}
+
+@media (max-width: 300px) {
+    .container-light {
+        width: 300px;  
     }
 }

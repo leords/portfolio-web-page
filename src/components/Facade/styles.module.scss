@@ -410,20 +410,23 @@ h1 {
         height: 180px;
         border-radius: 100%;
         overflow: hidden;
-        border: solid 6px $primary-color-light;
+        border: solid 5px $primary-color-light;
     }
     .image {
         position: relative;
         width: 180px;
         height: auto;
-        
+    }
+    .author-light {
+        width: 70%;
     }
 //--- DARK ---
     .div-dark {
         width: 430px;
+        height: auto;
+        padding-block: 40px;
         display: flex;
         flex-direction: column-reverse;
-        padding-block: 40px;
     }
     .div-text-dark {
         width: 430px;
@@ -441,6 +444,9 @@ h1 {
         align-items: center;
         padding-right: 0px;
         margin-bottom: 20px;
+    }
+    .author-dark {
+        width: 70%;
     }
 }
 
@@ -486,7 +492,9 @@ h1 {
         position: relative;
         width: 160px;
         height: auto;
-        
+    }
+    .author-light {
+        text-align: center;
     }
 //--- DARK ---
     .div-dark {
@@ -508,5 +516,8 @@ h1 {
         align-items: center;
         padding-right: 0px;
         margin-bottom: 20px;
+    }
+    .author-dark {
+        text-align: center;
     }
 }
