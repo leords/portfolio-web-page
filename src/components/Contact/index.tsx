@@ -28,7 +28,7 @@ export function Contact() {
                 </div>
                 <div className={styles['div-form']}>
                     <form 
-                        action="https://formsubmit.co/leo.ro.drigues@hotmail.com"
+                        action="https://formsubmit.co/dccc4cd6cdf412f7351fa169a4a9701a"
                         method="POST"
                         >
                         <input 
