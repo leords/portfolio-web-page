@@ -6,3 +6,17 @@
     align-items: center;
     justify-content: center;
 }
+
+.floatingButton {
+    display: flex;
+    height: 0px;
+    max-width: 1200px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 50px;
+    position: sticky;
+    top: 98%;
+    left: 98%;
+
+    z-index: 10;
+}

@@ -16,7 +16,8 @@ export class Mydados {
         facebook: 'https://www.facebook.com/profile.php?id=100002584897261',
         instagram: 'https://www.instagram.com/leoroodriiguees/',
         whatsapp:'https://api.whatsapp.com/send?phone=5547984126073&text=Ol%C3%A1%20Leonardo%2C%20tudo%20bem%3F%20',
-        download: 'https://drive.google.com/file/d/1KdF6ho640r5jBhlJsPrkScFEZAyREwVe/view?usp=sharing'
+        download: 'https://drive.google.com/file/d/1KdF6ho640r5jBhlJsPrkScFEZAyREwVe/view?usp=sharing',
+        github: 'https://github.com/leords'
     }
 }
 

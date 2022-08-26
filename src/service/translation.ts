@@ -12,7 +12,7 @@ export class Translation {
             about: 'About me',
             skills: 'Skills',
             portfolio: 'Portfolio',
-            contact: 'Contact',
+            instagram: 'Instagram',
         },
 
         facade: {
@@ -68,9 +68,9 @@ export class Translation {
             link: 'Acess the complete portfolio',
         },
 
-        contact: {
-            title: 'Portfolio',
-            subtitle: "Portfolio of projects posted on github, developed for study and practice. Using known resources in courses and free.",
+        instagram: {
+            title: 'Instagram',
+            subtitle: "Consuming API for demo of my social network instagram.",
 
             form: {
                 name: 'Name',
@@ -87,7 +87,7 @@ export class Translation {
                 about: 'About me',
                 skills: 'Skills',
                 portfolio: 'Portfolio',
-                contact: 'Contact',
+                instagram: 'Instagram',
                 cell: 'Cell'
             },
             copyright: 'Leonardo Rodrigues ©Copyright 2022. Developed by Leords.'
@@ -106,7 +106,7 @@ Tradução para o portugues!
             about: 'Sobre mim',
             skills: 'Habilidade',
             portfolio: 'Portfólio',
-            contact: 'Contato',
+            instagram: 'instagram',
             switch: 'Modo'
         },
 
@@ -163,9 +163,9 @@ Tradução para o portugues!
             link: 'Acesse o portfólio completo',
         },
 
-        contact: {
-            title: 'Contato.',
-            subtitle: 'Envie um email para mim, seja para me contratar rsrsrs ou apenas para dar um feedback do você viu nesse curto momento. Obrigado!',
+        instagram: {
+            title: 'Instagram.',
+            subtitle: 'Consumindo API para demonstração da minha rede social instagram.',
 
             form: {
                 name: 'Nome',

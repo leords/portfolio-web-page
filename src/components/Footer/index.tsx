@@ -10,8 +10,8 @@ import styles from './styles.module.scss';
 
 export function Footer() {
 
-    const {theme, setTheme} = useContext(ThemeContext);
-    const {translate, setTranslate} = useContext(TranslateContext);
+    const {theme} = useContext(ThemeContext);
+    const {translate} = useContext(TranslateContext);
 
     const language = new Translation();
     const personData = new Mydados()
@@ -59,46 +59,12 @@ export function Footer() {
                             </li>
                             <li>
                                 <a 
-                                    href="#contact">
-                                    {language[translate].footer.menu.contact}
+                                    href="#instagram">
+                                    {language[translate].footer.menu.instagram}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div className={styles['div-logo']}>
-                    <a  
-                        href={personData.person.linkedin}
-                        target={'_blank'}>
-                        <LinkedinLogo 
-                            size={32}
-                            color={'#FFFFFF'}
-                        />
-                    </a>
-                    <a  
-                        href={personData.person.facebook}
-                        target={'_blank'}>
-                        <FacebookLogo 
-                            size={32}
-                            color={'#FFFFFF'}
-                        />
-                    </a>
-                    <a  
-                        href={personData.person.instagram}
-                        target={'_blank'}>
-                        <InstagramLogo 
-                            size={32}
-                            color={'#FFFFFF'}
-                        />
-                    </a>
-                    <a  
-                        href={personData.person.whatsapp}
-                        target={'_blank'}>
-                        <WhatsappLogo 
-                            size={32}
-                            color={'#FFFFFF'}
-                        />
-                    </a>
                 </div>
                 <div className={styles['div-dev']}>
                     <p>{language[translate].footer.copyright}</p>

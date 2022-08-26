@@ -38,7 +38,7 @@ export function Menu() {
                                 <a href="#portfolio">{language[translate].menu.portfolio}</a> 
                             </li>
                             <li>
-                                <a href="#contact">{language[translate].menu.contact}</a> 
+                                <a href="#instagram">{language[translate].menu.instagram}</a> 
                             </li>
                         </ul>
                 </div>

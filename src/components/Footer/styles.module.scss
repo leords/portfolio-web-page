@@ -24,6 +24,7 @@
     flex-direction: row;
     padding-top: 50px;
     padding-bottom: 35px;
+    border-bottom: solid 1px $primary-background-color-light
 }
 
 .div-person {
@@ -92,16 +93,6 @@
         font-size: $font-text-size;
         color: $primary-background-color-light;
     }
-}
-
-.div-logo {
-    width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: solid 1px $primary-background-color-light
 }
 
 .div-dev {

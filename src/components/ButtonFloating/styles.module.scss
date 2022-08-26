@@ -1,0 +1,43 @@
+@import '../../sass/theme.scss';
+@import '../../sass/font.scss';
+
+
+.container-light {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;  
+    padding: 10px;  
+
+    background-color: $primary-background-color-dark;
+}
+
+.img {
+    width: 40px;
+    height: auto;
+    padding-inline: 5px;
+    
+}
+
+
+//-- DARK THEME --
+
+.container-dark {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;  
+    padding: 10px;  
+
+    background-color: $primary-background-color-light;
+}
+
+@media (max-width:1024px) {
+    
+}
