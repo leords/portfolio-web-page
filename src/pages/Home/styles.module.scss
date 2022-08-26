@@ -20,3 +20,34 @@
 
     z-index: 10;
 }
+
+@media(max-width: 420px) {
+    .floatingButton {
+        display: flex;
+        height: 0px;
+        width: 300px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-right: 10px;
+        position: sticky;
+        top: 98%;
+        left: 98%;
+    
+        z-index: 10;
+    }
+}
+@media(max-width: 300px) {
+    .floatingButton {
+        display: flex;
+        height: 0px;
+        width: 300px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-right: 10px;
+        position: sticky;
+        top: 98%;
+        left: 98%;
+    
+        z-index: 10;
+    }
+}
